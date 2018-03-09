@@ -1,4 +1,5 @@
 @prefix : <http://cui.unige.ch/isi/onto/vgio#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix wn: <http://www.wordnet.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,7 +9,33 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://cui.unige.ch/isi/onto/vgio> .
 
-<http://cui.unige.ch/isi/onto/vgio> rdf:type owl:Ontology .
+<http://cui.unige.ch/isi/onto/vgio> rdf:type owl:Ontology ;
+                                     dc:description """An ontology for the semantic indexing of VGI related documents.
+
+This ontology (still under construction) has been created by
+
+1. manually identifying and extracting key terms from  the European Handbook of Crowdsourced Geographic  Information <http://vgibox.eu/repository/index.php/European_Handbook_of_Crowdsourced_Geographic_Information>
+
+2. rewriting the terms according to the thesaurus standard (e.g. \"task analysis\" instead of \"analysis of tasks\")
+
+3. creating a hierarchy by grouping terms by their last word
+
+4 manually checking the semantic consistency of the hierarchy and adding a higher (more abstract) level the corresponds to Wordnet concepts"""@en ;
+                                     dc:creator "Claudine Métral" ,
+                                                "Rob Lemmens" ,
+                                                "Gilles Falquet" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
 
 #################################################################
 #    Classes
