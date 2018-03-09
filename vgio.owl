@@ -1,0 +1,4556 @@
+@prefix : <http://cui.unige.ch/isi/onto/vgio#> .
+@prefix wn: <http://www.wordnet.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vgi: <http://vgibox.eu/onto#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://cui.unige.ch/isi/onto/vgio> .
+
+<http://cui.unige.ch/isi/onto/vgio> rdf:type owl:Ontology .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://cui.unige.ch/isi/onto/vgio#a_priori_approach
+:a_priori_approach rdf:type owl:Class ;
+                   rdfs:subClassOf :approach ;
+                   rdfs:label "a priori approach" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#abnormal_and_disastrous_event
+:abnormal_and_disastrous_event rdf:type owl:Class ;
+                               rdfs:subClassOf :event ;
+                               rdfs:label "abnormal and disastrous event" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#about_farmland_habitats_and_species
+:about_farmland_habitats_and_species rdf:type owl:Class ;
+                                     rdfs:subClassOf :species ;
+                                     rdfs:label "about farmland habitats and species" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#accuracy
+:accuracy rdf:type owl:Class ;
+          rdfs:subClassOf wn:attribute ;
+          rdfs:label "accuracy" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#acquisition_procedure
+:acquisition_procedure rdf:type owl:Class ;
+                       rdfs:subClassOf :procedure ;
+                       rdfs:label "acquisition procedure" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#active_contribution
+:active_contribution rdf:type owl:Class ;
+                     rdfs:subClassOf :contribution ;
+                     rdfs:label "active contribution" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#active_sensing
+:active_sensing rdf:type owl:Class ;
+                rdfs:subClassOf :sensing ;
+                rdfs:label "active sensing" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#active_surveillance
+:active_surveillance rdf:type owl:Class ;
+                     rdfs:subClassOf :surveillance ;
+                     rdfs:label "active surveillance" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#active_surveillance_data
+:active_surveillance_data rdf:type owl:Class ;
+                          rdfs:subClassOf :data ;
+                          rdfs:label "active surveillance data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#activity_pattern
+:activity_pattern rdf:type owl:Class ;
+                  rdfs:subClassOf :pattern ;
+                  rdfs:label "activity pattern" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#administration
+:administration rdf:type owl:Class ;
+                rdfs:subClassOf :organization ;
+                rdfs:label "administration" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#affective_responses_to_environment
+:affective_responses_to_environment rdf:type owl:Class ;
+                                    rdfs:subClassOf :process ;
+                                    rdfs:label "affective responses to environment" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#agency
+:agency rdf:type owl:Class ;
+        rdfs:subClassOf :organization ;
+        rdfs:label "agency" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#aggregated_mobility_pattern
+:aggregated_mobility_pattern rdf:type owl:Class ;
+                             rdfs:subClassOf :pattern ;
+                             rdfs:label "aggregated mobility pattern" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#agricultural_area
+:agricultural_area rdf:type owl:Class ;
+                   rdfs:subClassOf :area ;
+                   rdfs:label "agricultural area" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#air_quality
+:air_quality rdf:type owl:Class ;
+             rdfs:subClassOf :quality ;
+             rdfs:label "air quality" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#algorithm
+:algorithm rdf:type owl:Class ;
+           rdfs:subClassOf :method ;
+           rdfs:label "algorithm" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#amateurs_data_production
+:amateurs_data_production rdf:type owl:Class ;
+                          rdfs:subClassOf :production ;
+                          rdfs:label "amateurs data production" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#amazon_web_service
+:amazon_web_service rdf:type owl:Class ;
+                    rdfs:subClassOf :service ;
+                    rdfs:label "amazon web service" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#ambient_geographic_information
+:ambient_geographic_information rdf:type owl:Class ;
+                                rdfs:subClassOf :information ;
+                                rdfs:label "ambient geographic information" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#analysis
+:analysis rdf:type owl:Class ;
+          rdfs:subClassOf wn:activity ;
+          rdfs:label "analysis" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#analysis-relevant_keyword
+:analysis-relevant_keyword rdf:type owl:Class ;
+                           rdfs:subClassOf :metadata ;
+                           rdfs:label "analysis-relevant keyword" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#analytics
+:analytics rdf:type owl:Class ;
+           rdfs:subClassOf :method ;
+           rdfs:label "analytics" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#and_mobile_clients_for_service
+:and_mobile_clients_for_service rdf:type owl:Class ;
+                                rdfs:subClassOf :service ;
+                                rdfs:label "and mobile clients for service" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#android_application
+:android_application rdf:type owl:Class ;
+                     rdfs:subClassOf :application ;
+                     rdfs:label "android application" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#android_mobile_application
+:android_mobile_application rdf:type owl:Class ;
+                            rdfs:subClassOf :application ;
+                            rdfs:label "android mobile application" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#api
+:api rdf:type owl:Class ;
+     rdfs:subClassOf :software ;
+     rdfs:label "api" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#app_user
+:app_user rdf:type owl:Class ;
+          rdfs:subClassOf :user ;
+          rdfs:label "app user" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#app_user_validation
+:app_user_validation rdf:type owl:Class ;
+                     rdfs:subClassOf :validation ;
+                     rdfs:label "app user validation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#application
+:application rdf:type owl:Class ;
+             rdfs:subClassOf :software ;
+             rdfs:label "application" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#application_programming_interface
+:application_programming_interface rdf:type owl:Class ;
+                                   rdfs:subClassOf :interface ;
+                                   rdfs:label "application programming interface" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#approach
+:approach rdf:type owl:Class ;
+          rdfs:subClassOf wn:activity ;
+          rdfs:label "approach" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#appropriate_data
+:appropriate_data rdf:type owl:Class ;
+                  rdfs:subClassOf :data ;
+                  rdfs:label "appropriate data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#apriori_algorithm
+:apriori_algorithm rdf:type owl:Class ;
+                   rdfs:subClassOf :algorithm ;
+                   rdfs:label "apriori algorithm" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#area
+:area rdf:type owl:Class ;
+      rdfs:subClassOf :geographic_object_ ;
+      rdfs:label "area" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#areal_feature
+:areal_feature rdf:type owl:Class ;
+               rdfs:subClassOf :feature ;
+               rdfs:label "areal feature" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#assessing_the_representativenes
+:assessing_the_representativenes rdf:type owl:Class ;
+                                 rdfs:subClassOf :representativenes ;
+                                 rdfs:label "assessing the representativenes" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#assessment
+:assessment rdf:type owl:Class ;
+            rdfs:subClassOf wn:activity ;
+            rdfs:label "assessment" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#attribute_accuracy
+:attribute_accuracy rdf:type owl:Class ;
+                    rdfs:subClassOf :accuracy ;
+                    rdfs:label "attribute accuracy" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#attribute_data
+:attribute_data rdf:type owl:Class ;
+                rdfs:subClassOf :data ;
+                rdfs:label "attribute data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#authoritative_data
+:authoritative_data rdf:type owl:Class ;
+                    rdfs:subClassOf :data ;
+                    rdfs:label "authoritative data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#authoritative_data_source
+:authoritative_data_source rdf:type owl:Class ;
+                           rdfs:subClassOf :source ;
+                           rdfs:label "authoritative data source" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#authoritative_geographic_information
+:authoritative_geographic_information rdf:type owl:Class ;
+                                      rdfs:subClassOf :information ;
+                                      rdfs:label "authoritative geographic information" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#authority
+:authority rdf:type owl:Class ;
+           rdfs:label "authority" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#automatic_filter
+:automatic_filter rdf:type owl:Class ;
+                  rdfs:subClassOf :filter ;
+                  rdfs:label "automatic filter" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#automation
+:automation rdf:type owl:Class ;
+            rdfs:label "automation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#barrier_for_participation
+:barrier_for_participation rdf:type owl:Class ;
+                           rdfs:subClassOf :participation ;
+                           rdfs:label "barrier for participation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#bayesian_approach
+:bayesian_approach rdf:type owl:Class ;
+                   rdfs:subClassOf :approach ;
+                   rdfs:label "bayesian approach" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#behavioural_knowledge
+:behavioural_knowledge rdf:type owl:Class ;
+                       rdfs:subClassOf :knowledge ;
+                       rdfs:label "behavioural knowledge" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#big_data
+:big_data rdf:type owl:Class ;
+          rdfs:subClassOf :data ;
+          rdfs:label "big data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#big_data_paradigm
+:big_data_paradigm rdf:type owl:Class ;
+                   rdfs:subClassOf :paradigm ;
+                   rdfs:label "big data paradigm" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#biological_monitoring_or_surveillance_program
+:biological_monitoring_or_surveillance_program rdf:type owl:Class ;
+                                               rdfs:subClassOf :program ;
+                                               rdfs:label "biological monitoring or surveillance program" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#biological_observation
+:biological_observation rdf:type owl:Class ;
+                        rdfs:subClassOf :observation ;
+                        rdfs:label "biological observation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#birds-eye_image
+:birds-eye_image rdf:type owl:Class ;
+                 rdfs:subClassOf :image ;
+                 rdfs:label "birds-eye image" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#bottom-up_approach
+:bottom-up_approach rdf:type owl:Class ;
+                    rdfs:subClassOf :approach ;
+                    rdfs:label "bottom-up approach" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#breeding_bird_survey
+:breeding_bird_survey rdf:type owl:Class ;
+                      rdfs:subClassOf :survey ;
+                      rdfs:label "breeding bird survey" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#building_footprint
+:building_footprint rdf:type owl:Class ;
+                    rdfs:subClassOf :footprint ;
+                    rdfs:label "building footprint" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#bus_station
+:bus_station rdf:type owl:Class ;
+             rdfs:subClassOf :station ;
+             rdfs:label "bus station" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#butterfly_monitoring
+:butterfly_monitoring rdf:type owl:Class ;
+                      rdfs:subClassOf :monitoring ;
+                      rdfs:label "butterfly monitoring" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#cadastral_model
+:cadastral_model rdf:type owl:Class ;
+                 rdfs:subClassOf :model ;
+                 rdfs:label "cadastral model" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#cadastral_procedure
+:cadastral_procedure rdf:type owl:Class ;
+                     rdfs:subClassOf :procedure ;
+                     rdfs:label "cadastral procedure" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#cadastral_survey
+:cadastral_survey rdf:type owl:Class ;
+                  rdfs:subClassOf :survey ;
+                  rdfs:label "cadastral survey" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#cadastral_system
+:cadastral_system rdf:type owl:Class ;
+                  rdfs:subClassOf :system ;
+                  rdfs:label "cadastral system" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#captured_data
+:captured_data rdf:type owl:Class ;
+               rdfs:subClassOf :data ;
+               rdfs:label "captured data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#car-based_navigation
+:car-based_navigation rdf:type owl:Class ;
+                      rdfs:subClassOf :navigation ;
+                      rdfs:label "car-based navigation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#cartographic_project
+:cartographic_project rdf:type owl:Class ;
+                      rdfs:subClassOf :project ;
+                      rdfs:label "cartographic project" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#census_work
+:census_work rdf:type owl:Class ;
+             rdfs:subClassOf :work ;
+             rdfs:label "census work" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#characteristic
+:characteristic rdf:type owl:Class ;
+                rdfs:subClassOf wn:attribute ;
+                rdfs:label "characteristic" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#checking_scenario
+:checking_scenario rdf:type owl:Class ;
+                   rdfs:subClassOf :scenario ;
+                   rdfs:label "checking scenario" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#citizen_as_sensor
+:citizen_as_sensor rdf:type owl:Class ;
+                   rdfs:subClassOf :sensor ,
+                                   wn:person ;
+                   rdfs:label "citizen as sensor" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#citizen_observation
+:citizen_observation rdf:type owl:Class ;
+                     rdfs:subClassOf :observation ;
+                     rdfs:label "citizen observation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#citizen_participation
+:citizen_participation rdf:type owl:Class ;
+                       rdfs:subClassOf :participation ;
+                       rdfs:label "citizen participation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#citizen_science
+:citizen_science rdf:type owl:Class ;
+                 rdfs:subClassOf :science ;
+                 rdfs:label "citizen science" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#citizen_science_data
+:citizen_science_data rdf:type owl:Class ;
+                      rdfs:subClassOf :data ;
+                      rdfs:label "citizen science data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#citizen_science_project
+:citizen_science_project rdf:type owl:Class ;
+                         rdfs:subClassOf :project ;
+                         rdfs:label "citizen science project" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#citizens_as_sensor
+:citizens_as_sensor rdf:type owl:Class ;
+                    rdfs:subClassOf :sensor ,
+                                    wn:person ;
+                    rdfs:label "citizens as sensor" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#citizens_science
+:citizens_science rdf:type owl:Class ;
+                  rdfs:subClassOf :science ;
+                  rdfs:label "citizens science" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#citizens_sensor
+:citizens_sensor rdf:type owl:Class ;
+                 rdfs:subClassOf :sensor ,
+                                 wn:person ;
+                 rdfs:label "citizens sensor" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#city
+:city rdf:type owl:Class ;
+      rdfs:subClassOf :geographic_object_ ;
+      rdfs:label "city" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#city_structure
+:city_structure rdf:type owl:Class ;
+                rdfs:subClassOf :structure ;
+                rdfs:label "city structure" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#classication_processs
+:classication_processs rdf:type owl:Class ;
+                       rdfs:subClassOf :process ;
+                       rdfs:label "classication processs" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#classication_quality
+:classication_quality rdf:type owl:Class ;
+                      rdfs:subClassOf :quality ;
+                      rdfs:label "classication quality" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#classification_method
+:classification_method rdf:type owl:Class ;
+                       rdfs:subClassOf :method ;
+                       rdfs:label "classification method" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#classifier
+:classifier rdf:type owl:Class ;
+            rdfs:subClassOf :software ;
+            rdfs:label "classifier" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#classifying_information
+:classifying_information rdf:type owl:Class ;
+                         rdfs:subClassOf wn:activity ;
+                         rdfs:label "classifying information" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#cloud_computing
+:cloud_computing rdf:type owl:Class ;
+                 rdfs:subClassOf :method ;
+                 rdfs:label "cloud computing" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#clustering
+:clustering rdf:type owl:Class ;
+            rdfs:subClassOf :method ;
+            rdfs:label "clustering" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#clustering_algorithm
+:clustering_algorithm rdf:type owl:Class ;
+                      rdfs:subClassOf :algorithm ;
+                      rdfs:label "clustering algorithm" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#co-occurrence_and_data_mining_method
+:co-occurrence_and_data_mining_method rdf:type owl:Class ;
+                                      rdfs:subClassOf :method ;
+                                      rdfs:label "co-occurrence and data mining method" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#collaboration_platform
+:collaboration_platform rdf:type owl:Class ;
+                        rdfs:subClassOf :platform ;
+                        rdfs:label "collaboration platform" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#collaborative_cloud_computing
+:collaborative_cloud_computing rdf:type owl:Class ;
+                               rdfs:subClassOf :cloud_computing ;
+                               rdfs:label "collaborative cloud computing" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#collaborative_human-computer_analytical_activity
+:collaborative_human-computer_analytical_activity rdf:type owl:Class ;
+                                                  rdfs:subClassOf wn:activity ;
+                                                  rdfs:label "collaborative human-computer analytical activity" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#collaborative_mapping
+:collaborative_mapping rdf:type owl:Class ;
+                       rdfs:subClassOf :mapping ;
+                       rdfs:label "collaborative mapping" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#collaborative_mapping_project
+:collaborative_mapping_project rdf:type owl:Class ;
+                               rdfs:subClassOf :project ;
+                               rdfs:label "collaborative mapping project" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#collective_intelligence
+:collective_intelligence rdf:type owl:Class ;
+                         rdfs:subClassOf :intelligence ;
+                         rdfs:label "collective intelligence" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#collective_tagging_approach
+:collective_tagging_approach rdf:type owl:Class ;
+                             rdfs:subClassOf :approach ;
+                             rdfs:label "collective tagging approach" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#commercial_and_vgi_dataset
+:commercial_and_vgi_dataset rdf:type owl:Class ;
+                            rdfs:subClassOf :dataset ;
+                            rdfs:label "commercial and vgi dataset" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#commercial_vgi_project
+:commercial_vgi_project rdf:type owl:Class ;
+                        rdfs:subClassOf :project ;
+                        rdfs:label "commercial vgi project" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#community
+:community rdf:type owl:Class ;
+           rdfs:label "community" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#community-based_monitoring
+:community-based_monitoring rdf:type owl:Class ;
+                            rdfs:subClassOf :monitoring ;
+                            rdfs:label "community-based monitoring" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#community_mapping
+:community_mapping rdf:type owl:Class ;
+                   rdfs:subClassOf :mapping ;
+                   rdfs:label "community mapping" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#computational_analysis
+:computational_analysis rdf:type owl:Class ;
+                        rdfs:subClassOf :analysis ;
+                        rdfs:label "computational analysis" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#computational_social_science
+:computational_social_science rdf:type owl:Class ;
+                              rdfs:subClassOf :science ;
+                              rdfs:label "computational social science" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#computationally_supported_technique
+:computationally_supported_technique rdf:type owl:Class ;
+                                     rdfs:subClassOf :technique ;
+                                     rdfs:label "computationally supported technique" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#computer_science
+:computer_science rdf:type owl:Class ;
+                  rdfs:subClassOf :science ;
+                  rdfs:label "computer science" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#consistency
+:consistency rdf:type owl:Class ;
+             rdfs:subClassOf wn:attribute ;
+             rdfs:label "consistency" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#content
+:content rdf:type owl:Class ;
+         rdfs:subClassOf :data_collection ;
+         rdfs:label "content" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#context
+:context rdf:type owl:Class ;
+         rdfs:subClassOf wn:attribute ;
+         rdfs:label "context" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#contextual_information
+:contextual_information rdf:type owl:Class ;
+                        rdfs:subClassOf :information ;
+                        rdfs:label "contextual information" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#contextual_social_media_data_collection
+:contextual_social_media_data_collection rdf:type owl:Class ;
+                                         rdfs:subClassOf :data_collection ;
+                                         rdfs:label "contextual social media data collection" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#contributed_data
+:contributed_data rdf:type owl:Class ;
+                  rdfs:subClassOf :data ;
+                  rdfs:label "contributed data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#contributing_scenario
+:contributing_scenario rdf:type owl:Class ;
+                       rdfs:subClassOf :scenario ;
+                       rdfs:label "contributing scenario" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#contribution
+:contribution rdf:type owl:Class ;
+              rdfs:subClassOf wn:activity ;
+              rdfs:label "contribution" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#contributor
+:contributor rdf:type owl:Class ;
+             rdfs:subClassOf wn:person ;
+             rdfs:label "contributor" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#contributors_heterogeneity
+:contributors_heterogeneity rdf:type owl:Class ;
+                            rdfs:subClassOf :heterogeneity ;
+                            rdfs:label "contributors heterogeneity" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#control
+:control rdf:type owl:Class ;
+         rdfs:subClassOf wn:activity ;
+         rdfs:label "control" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#conventional_small_data
+:conventional_small_data rdf:type owl:Class ;
+                         rdfs:subClassOf :data ;
+                         rdfs:label "conventional small data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#convolutional_neural_network
+:convolutional_neural_network rdf:type owl:Class ;
+                              rdfs:subClassOf :machine_learning ;
+                              rdfs:label "convolutional neural network" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#coordinate
+:coordinate rdf:type owl:Class ;
+            rdfs:subClassOf :geographic_object_ ;
+            rdfs:label "coordinate" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#corine_nomenclature_for_land_use
+:corine_nomenclature_for_land_use rdf:type owl:Class ;
+                                  rdfs:subClassOf :use ;
+                                  rdfs:label "corine nomenclature for land use" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#cover
+:cover rdf:type owl:Class ;
+       rdfs:subClassOf :geographic_object_ ;
+       rdfs:label "cover" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#coverage_area
+:coverage_area rdf:type owl:Class ;
+               rdfs:subClassOf :area ;
+               rdfs:label "coverage area" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#crises_management
+:crises_management rdf:type owl:Class ;
+                   rdfs:subClassOf :management ;
+                   rdfs:label "crises management" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#crisis_management
+:crisis_management rdf:type owl:Class ;
+                   rdfs:subClassOf :management ;
+                   rdfs:label "crisis management" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#crowd-sensing_activity
+:crowd-sensing_activity rdf:type owl:Class ;
+                        rdfs:subClassOf wn:activity ;
+                        rdfs:label "crowd-sensing activity" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#crowd-sensing_based_application
+:crowd-sensing_based_application rdf:type owl:Class ;
+                                 rdfs:subClassOf :application ;
+                                 rdfs:label "crowd-sensing based application" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#crowd-sourced_web_data
+:crowd-sourced_web_data rdf:type owl:Class ;
+                        rdfs:subClassOf :crowdsourced_data ;
+                        rdfs:label "crowd-sourced web data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#crowd_sentiment_measurement
+:crowd_sentiment_measurement rdf:type owl:Class ;
+                             rdfs:subClassOf :measurement ;
+                             rdfs:label "crowd sentiment measurement" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#crowdsensed_data
+:crowdsensed_data rdf:type owl:Class ;
+                  owl:equivalentClass :crowdsourced_data ;
+                  rdfs:subClassOf :data ;
+                  rdfs:label "crowdsensed data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#crowdsoucerd_geographic_information
+:crowdsoucerd_geographic_information rdf:type owl:Class ;
+                                     rdfs:subClassOf :crowdsourced_information ,
+                                                     :geographic_information ;
+                                     rdfs:label "crowdsoucerd geographic information" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#crowdsourced_application
+:crowdsourced_application rdf:type owl:Class ;
+                          rdfs:subClassOf :application ;
+                          rdfs:label "crowdsourced application" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#crowdsourced_data
+:crowdsourced_data rdf:type owl:Class ;
+                   rdfs:subClassOf :data ;
+                   rdfs:label "crowdsourced data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#crowdsourced_geographic_information
+:crowdsourced_geographic_information rdf:type owl:Class ;
+                                     rdfs:subClassOf :crowdsourced_information ,
+                                                     :geographic_information ;
+                                     rdfs:label "crowdsourced geographic information" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#crowdsourced_geographic_information_phenomena
+:crowdsourced_geographic_information_phenomena rdf:type owl:Class ;
+                                               rdfs:subClassOf :phenomena ;
+                                               rdfs:label "crowdsourced geographic information phenomena" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#crowdsourced_information
+:crowdsourced_information rdf:type owl:Class ;
+                          rdfs:subClassOf :information ;
+                          rdfs:label "crowdsourced information" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#crowdsourced_paradigm
+:crowdsourced_paradigm rdf:type owl:Class ;
+                       rdfs:subClassOf :paradigm ;
+                       rdfs:label "crowdsourced paradigm" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#crowdsourcing
+:crowdsourcing rdf:type owl:Class ;
+               rdfs:subClassOf :method ;
+               rdfs:label "crowdsourcing" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#crowdsourcing_cadastral_model
+:crowdsourcing_cadastral_model rdf:type owl:Class ;
+                               rdfs:subClassOf :model ;
+                               rdfs:label "crowdsourcing cadastral model" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#crowdsourcing_data
+:crowdsourcing_data rdf:type owl:Class ;
+                    rdfs:subClassOf wn:activity ;
+                    rdfs:label "crowdsourcing data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#crowdsourcing_geographic_information
+:crowdsourcing_geographic_information rdf:type owl:Class ;
+                                      rdfs:subClassOf :crowdsourced_information ,
+                                                      :geographic_information ;
+                                      rdfs:label "crowdsourcing geographic information" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#crowdsourcing_technique
+:crowdsourcing_technique rdf:type owl:Class ;
+                         rdfs:subClassOf :technique ;
+                         rdfs:label "crowdsourcing technique" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#crowdsourcing_tools_and_service
+:crowdsourcing_tools_and_service rdf:type owl:Class ;
+                                 rdfs:subClassOf :service ;
+                                 rdfs:label "crowdsourcing tools and service" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#cultural_innovation
+:cultural_innovation rdf:type owl:Class ;
+                     rdfs:subClassOf :innovation ;
+                     rdfs:label "cultural innovation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#current_location
+:current_location rdf:type owl:Class ;
+                  rdfs:subClassOf :location ;
+                  rdfs:label "current location" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#danger_map
+:danger_map rdf:type owl:Class ;
+            rdfs:subClassOf :map ;
+            rdfs:label "danger map" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#data
+:data rdf:type owl:Class ;
+      rdfs:label "data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#data-intensive_computational_social_science
+:data-intensive_computational_social_science rdf:type owl:Class ;
+                                             rdfs:subClassOf :science ;
+                                             rdfs:label "data-intensive computational social science" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#data_analysis
+:data_analysis rdf:type owl:Class ;
+               rdfs:subClassOf :analysis ;
+               rdfs:label "data analysis" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#data_collection
+:data_collection rdf:type owl:Class ;
+                 rdfs:subClassOf :information_representation_object_ ;
+                 rdfs:label "data collection" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#data_collection_and_sharing
+:data_collection_and_sharing rdf:type owl:Class ;
+                             rdfs:subClassOf :sharing ;
+                             rdfs:label "data collection and sharing" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#data_management
+:data_management rdf:type owl:Class ;
+                 rdfs:subClassOf :management ;
+                 rdfs:label "data management" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#data_mining_algorithm
+:data_mining_algorithm rdf:type owl:Class ;
+                       rdfs:subClassOf :algorithm ;
+                       rdfs:label "data mining algorithm" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#data_processing
+:data_processing rdf:type owl:Class ;
+                 rdfs:subClassOf :processing ;
+                 rdfs:label "data processing" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#data_quality
+:data_quality rdf:type owl:Class ;
+              rdfs:subClassOf :quality ;
+              rdfs:label "data quality" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#data_representativenes
+:data_representativenes rdf:type owl:Class ;
+                        rdfs:subClassOf :representativenes ;
+                        rdfs:label "data representativenes" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#data_sharing
+:data_sharing rdf:type owl:Class ;
+              rdfs:subClassOf :sharing ;
+              rdfs:label "data sharing" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#data_source
+:data_source rdf:type owl:Class ;
+             rdfs:subClassOf :source ;
+             rdfs:label "data source" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#data_structure
+:data_structure rdf:type owl:Class ;
+                rdfs:subClassOf :structure ;
+                rdfs:label "data structure" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#data_validation
+:data_validation rdf:type owl:Class ;
+                 rdfs:subClassOf :validation ;
+                 rdfs:label "data validation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#database
+:database rdf:type owl:Class ;
+          rdfs:subClassOf :data_collection ;
+          rdfs:label "database" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#database_system
+:database_system rdf:type owl:Class ;
+                 rdfs:subClassOf :system ;
+                 rdfs:label "database system" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#dataset
+:dataset rdf:type owl:Class ;
+         rdfs:subClassOf :data_collection ;
+         rdfs:label "dataset" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#dbscan_clustering_algorithm
+:dbscan_clustering_algorithm rdf:type owl:Class ;
+                             rdfs:subClassOf :algorithm ;
+                             rdfs:label "dbscan clustering algorithm" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#decision-making_policy
+:decision-making_policy rdf:type owl:Class ;
+                        rdfs:subClassOf :policy ;
+                        rdfs:label "decision-making policy" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#decision_support_application
+:decision_support_application rdf:type owl:Class ;
+                              rdfs:subClassOf :application ;
+                              rdfs:label "decision support application" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#deep_learning
+:deep_learning rdf:type owl:Class ;
+               rdfs:subClassOf :machine_learning ;
+               rdfs:label "deep learning" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#deep_learning_technique
+:deep_learning_technique rdf:type owl:Class ;
+                         rdfs:subClassOf :technique ;
+                         rdfs:label "deep learning technique" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#density_based_clustering_algorithm
+:density_based_clustering_algorithm rdf:type owl:Class ;
+                                    rdfs:subClassOf :algorithm ;
+                                    rdfs:label "density based clustering algorithm" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#density_based_scan_algorithm
+:density_based_scan_algorithm rdf:type owl:Class ;
+                              rdfs:subClassOf :algorithm ;
+                              rdfs:label "density based scan algorithm" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#device
+:device rdf:type owl:Class ;
+        rdfs:subClassOf :instrumentation ;
+        rdfs:label "device" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#digital_elevation_model
+:digital_elevation_model rdf:type owl:Class ;
+                         rdfs:subClassOf :model ;
+                         rdfs:label "digital elevation model" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#digital_footprint
+:digital_footprint rdf:type owl:Class ;
+                   rdfs:subClassOf :footprint ;
+                   rdfs:label "digital footprint" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#digital_orthophoto
+:digital_orthophoto rdf:type owl:Class ;
+                    rdfs:subClassOf :orthophoto ;
+                    rdfs:label "digital orthophoto" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#digital_spatial_data
+:digital_spatial_data rdf:type owl:Class ;
+                      rdfs:subClassOf :geospatial_data ;
+                      rdfs:label "digital spatial data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#digitise_object
+:digitise_object rdf:type owl:Class ;
+                 rdfs:subClassOf wn:activity ;
+                 rdfs:label "digitise object" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#disaster_management
+:disaster_management rdf:type owl:Class ;
+                     rdfs:subClassOf :management ;
+                     rdfs:label "disaster management" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#discipline
+:discipline rdf:type owl:Class ;
+            owl:equivalentClass :field ;
+            rdfs:label "discipline" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#disease_vector_species
+:disease_vector_species rdf:type owl:Class ;
+                        rdfs:subClassOf :species ;
+                        rdfs:label "disease vector species" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#display
+:display rdf:type owl:Class ;
+         rdfs:subClassOf :visual_object ;
+         rdfs:label "display" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#distributed__less_coordinated_system
+:distributed__less_coordinated_system rdf:type owl:Class ;
+                                      rdfs:subClassOf :system ;
+                                      rdfs:label "distributed  less coordinated system" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#distribution
+:distribution rdf:type owl:Class ;
+              rdfs:subClassOf wn:attribute ;
+              rdfs:label "distribution" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#diversity_and_heterogeneity
+:diversity_and_heterogeneity rdf:type owl:Class ;
+                             rdfs:subClassOf :heterogeneity ;
+                             rdfs:label "diversity and heterogeneity" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#document_model
+:document_model rdf:type owl:Class ;
+                rdfs:subClassOf :model ;
+                rdfs:label "document model" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#dynamic_map
+:dynamic_map rdf:type owl:Class ;
+             rdfs:subClassOf :map ;
+             rdfs:label "dynamic map" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#dynamic_source
+:dynamic_source rdf:type owl:Class ;
+                rdfs:subClassOf :source ;
+                rdfs:label "dynamic source" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#dynamic_traffic_information
+:dynamic_traffic_information rdf:type owl:Class ;
+                             rdfs:subClassOf :information ;
+                             rdfs:label "dynamic traffic information" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#economy
+:economy rdf:type owl:Class ;
+         rdfs:subClassOf :discipline ;
+         rdfs:label "economy" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#editor
+:editor rdf:type owl:Class ;
+        rdfs:subClassOf :software ;
+        rdfs:label "editor" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#efficient_data
+:efficient_data rdf:type owl:Class ;
+                rdfs:subClassOf :data ;
+                rdfs:label "efficient data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#elementary_task
+:elementary_task rdf:type owl:Class ;
+                 rdfs:subClassOf :task ;
+                 rdfs:label "elementary task" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#emergency_management
+:emergency_management rdf:type owl:Class ;
+                      rdfs:subClassOf :management ;
+                      rdfs:label "emergency management" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#empowers_the_user
+:empowers_the_user rdf:type owl:Class ;
+                   rdfs:subClassOf :user ;
+                   rdfs:label "empowers the user" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#enhanced_emoticon_classifier
+:enhanced_emoticon_classifier rdf:type owl:Class ;
+                              rdfs:subClassOf :classifier ;
+                              rdfs:label "enhanced emoticon classifier" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#enrich_the_data
+:enrich_the_data rdf:type owl:Class ;
+                 rdfs:subClassOf wn:activity ;
+                 rdfs:label "enrich the data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#enriched_service
+:enriched_service rdf:type owl:Class ;
+                  rdfs:subClassOf :service ;
+                  rdfs:label "enriched service" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#enriching_scenario
+:enriching_scenario rdf:type owl:Class ;
+                    rdfs:subClassOf :scenario ;
+                    rdfs:label "enriching scenario" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#environment
+:environment rdf:type owl:Class ;
+             rdfs:label "environment" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#environmental_collaborative_monitoring
+:environmental_collaborative_monitoring rdf:type owl:Class ;
+                                        rdfs:subClassOf :monitoring ;
+                                        rdfs:label "environmental collaborative monitoring" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#environmental_impact_assessment
+:environmental_impact_assessment rdf:type owl:Class ;
+                                 rdfs:subClassOf :assessment ;
+                                 rdfs:label "environmental impact assessment" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#environmental_monitoring
+:environmental_monitoring rdf:type owl:Class ;
+                          rdfs:subClassOf :monitoring ;
+                          rdfs:label "environmental monitoring" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#environmental_planning
+:environmental_planning rdf:type owl:Class ;
+                        rdfs:subClassOf :planning ;
+                        rdfs:label "environmental planning" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#error
+:error rdf:type owl:Class ;
+       rdfs:label "error" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#evaluation_process
+:evaluation_process rdf:type owl:Class ;
+                    rdfs:subClassOf :process ;
+                    rdfs:label "evaluation process" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#event
+:event rdf:type owl:Class ;
+       rdfs:label "event" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#experience
+:experience rdf:type owl:Class ;
+            rdfs:label "experience" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#expert
+:expert rdf:type owl:Class ;
+        rdfs:subClassOf wn:person ;
+        rdfs:label "expert" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#expert_knowledge
+:expert_knowledge rdf:type owl:Class ;
+                  rdfs:subClassOf :knowledge ;
+                  rdfs:label "expert knowledge" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#expert_validation
+:expert_validation rdf:type owl:Class ;
+                   rdfs:subClassOf :validation ;
+                   rdfs:label "expert validation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#extract_landmark
+:extract_landmark rdf:type owl:Class ;
+                  rdfs:subClassOf :landmark ;
+                  rdfs:label "extract landmark" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#extracting_precise_information
+:extracting_precise_information rdf:type owl:Class ;
+                                rdfs:subClassOf :extraction ;
+                                rdfs:label "extracting precise information" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#extraction
+:extraction rdf:type owl:Class ;
+            rdfs:subClassOf wn:activity ;
+            rdfs:label "extraction" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#extrinsic_quality
+:extrinsic_quality rdf:type owl:Class ;
+                   rdfs:subClassOf :quality ;
+                   rdfs:label "extrinsic quality" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#fast_lookup_service
+:fast_lookup_service rdf:type owl:Class ;
+                     rdfs:subClassOf :service ;
+                     rdfs:label "fast lookup service" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#feature
+:feature rdf:type owl:Class ;
+         rdfs:subClassOf :geographic_object_ ;
+         rdfs:label "feature" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#feature_recognition
+:feature_recognition rdf:type owl:Class ;
+                     rdfs:subClassOf :recognition ;
+                     rdfs:label "feature recognition" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#field
+:field rdf:type owl:Class ;
+       rdfs:label "field" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#field_measurement
+:field_measurement rdf:type owl:Class ;
+                   rdfs:subClassOf :measurement ;
+                   rdfs:label "field measurement" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#field_work
+:field_work rdf:type owl:Class ;
+            rdfs:subClassOf :work ;
+            rdfs:label "field work" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#filter
+:filter rdf:type owl:Class ;
+        rdfs:label "filter" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#fitness_application
+:fitness_application rdf:type owl:Class ;
+                     rdfs:subClassOf :application ;
+                     rdfs:label "fitness application" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#fitness_for_a_particular_use
+:fitness_for_a_particular_use rdf:type owl:Class ;
+                              rdfs:subClassOf :quality ;
+                              rdfs:label "fitness for a particular use" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#fitness_for_use
+:fitness_for_use rdf:type owl:Class ;
+                 rdfs:subClassOf :quality ;
+                 rdfs:label "fitness for use" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#flow_map
+:flow_map rdf:type owl:Class ;
+          rdfs:subClassOf :map ;
+          rdfs:label "flow map" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#footprint
+:footprint rdf:type owl:Class ;
+           rdfs:subClassOf :geographic_object_ ;
+           rdfs:label "footprint" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#forest_game_species
+:forest_game_species rdf:type owl:Class ;
+                     rdfs:subClassOf :species ;
+                     rdfs:label "forest game species" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#formal_error
+:formal_error rdf:type owl:Class ;
+              rdfs:subClassOf :error ;
+              rdfs:label "formal error" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#fostering_analysis
+:fostering_analysis rdf:type owl:Class ;
+                    rdfs:subClassOf :analysis ;
+                    rdfs:label "fostering analysis" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#free_world_digital_map
+:free_world_digital_map rdf:type owl:Class ;
+                        rdfs:subClassOf :map ;
+                        rdfs:label "free world digital map" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#fuel_station
+:fuel_station rdf:type owl:Class ;
+              rdfs:subClassOf :station ;
+              rdfs:label "fuel station" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#gaining_knowledge
+:gaining_knowledge rdf:type owl:Class ;
+                   rdfs:subClassOf :knowledge ;
+                   rdfs:label "gaining knowledge" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#game_monitoring
+:game_monitoring rdf:type owl:Class ;
+                 rdfs:subClassOf :monitoring ;
+                 rdfs:label "game monitoring" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#gathering_specific_and_structured_data
+:gathering_specific_and_structured_data rdf:type owl:Class ;
+                                        rdfs:subClassOf wn:activity ;
+                                        rdfs:label "gathering specific and structured data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geo-crowd_sourcing_paradigm
+:geo-crowd_sourcing_paradigm rdf:type owl:Class ;
+                             rdfs:subClassOf :paradigm ;
+                             rdfs:label "geo-crowd sourcing paradigm" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geo-located_data
+:geo-located_data rdf:type owl:Class ;
+                  rdfs:subClassOf :data ;
+                  rdfs:label "geo-located data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geo-referenced_content
+:geo-referenced_content rdf:type owl:Class ;
+                        rdfs:subClassOf :content ;
+                        rdfs:label "geo-referenced content" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geo-referenced_data
+:geo-referenced_data rdf:type owl:Class ;
+                     rdfs:subClassOf :data ;
+                     rdfs:label "geo-referenced data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geo-spatial_event
+:geo-spatial_event rdf:type owl:Class ;
+                   rdfs:subClassOf :event ;
+                   rdfs:label "geo-spatial event" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geo-tagged_tweet
+:geo-tagged_tweet rdf:type owl:Class ;
+                  rdfs:subClassOf :tweet ;
+                  rdfs:label "geo-tagged tweet" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geocollaboration_platform
+:geocollaboration_platform rdf:type owl:Class ;
+                           rdfs:subClassOf :platform ;
+                           rdfs:label "geocollaboration platform" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geographic_approach
+:geographic_approach rdf:type owl:Class ;
+                     rdfs:subClassOf :approach ;
+                     rdfs:label "geographic approach" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geographic_context
+:geographic_context rdf:type owl:Class ;
+                    rdfs:subClassOf :context ;
+                    rdfs:label "geographic context" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geographic_coordinate
+:geographic_coordinate rdf:type owl:Class ;
+                       rdfs:subClassOf :coordinate ;
+                       rdfs:label "geographic coordinate" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geographic_data
+:geographic_data rdf:type owl:Class ;
+                 rdfs:subClassOf :data ;
+                 rdfs:label "geographic data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geographic_database
+:geographic_database rdf:type owl:Class ;
+                     rdfs:subClassOf :database ;
+                     rdfs:label "geographic database" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geographic_entity_recognition
+:geographic_entity_recognition rdf:type owl:Class ;
+                               rdfs:subClassOf :recognition ;
+                               rdfs:label "geographic entity recognition" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geographic_feature
+:geographic_feature rdf:type owl:Class ;
+                    rdfs:subClassOf :feature ;
+                    rdfs:label "geographic feature" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geographic_information
+:geographic_information rdf:type owl:Class ;
+                        rdfs:subClassOf :information ;
+                        rdfs:label "geographic information" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geographic_information_science
+:geographic_information_science rdf:type owl:Class ;
+                                rdfs:subClassOf :science ;
+                                rdfs:label "geographic information science" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geographic_information_system
+:geographic_information_system rdf:type owl:Class ;
+                               rdfs:subClassOf :system ;
+                               rdfs:label "geographic information system" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geographic_object_
+:geographic_object_ rdf:type owl:Class ;
+                    rdfs:label "geographic object " .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geographic_precision
+:geographic_precision rdf:type owl:Class ;
+                      rdfs:subClassOf :precision ;
+                      rdfs:label "geographic precision" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geographic_volunteer_work
+:geographic_volunteer_work rdf:type owl:Class ;
+                           rdfs:subClassOf :work ;
+                           rdfs:label "geographic volunteer work" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geographical_accuracy
+:geographical_accuracy rdf:type owl:Class ;
+                       rdfs:subClassOf :accuracy ;
+                       rdfs:label "geographical accuracy" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geographical_area
+:geographical_area rdf:type owl:Class ;
+                   rdfs:subClassOf :area ;
+                   rdfs:label "geographical area" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geography
+:geography rdf:type owl:Class ;
+           rdfs:subClassOf :discipline ;
+           rdfs:label "geography" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#georeferenced_content
+:georeferenced_content rdf:type owl:Class ;
+                       rdfs:subClassOf :content ;
+                       rdfs:label "georeferenced content" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#georeferenced_social_media_data
+:georeferenced_social_media_data rdf:type owl:Class ;
+                                 rdfs:subClassOf :geo-referenced_data ;
+                                 rdfs:label "georeferenced social media data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#georeferenced_tweet
+:georeferenced_tweet rdf:type owl:Class ;
+                     rdfs:subClassOf :tweet ;
+                     rdfs:label "georeferenced tweet" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#georeferenced_user-generated_content
+:georeferenced_user-generated_content rdf:type owl:Class ;
+                                      rdfs:subClassOf :content ,
+                                                      :user-generated_content ;
+                                      rdfs:label "georeferenced user-generated content" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geosocial_network
+:geosocial_network rdf:type owl:Class ;
+                   rdfs:subClassOf :social_network ;
+                   rdfs:label "geosocial network" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geospatial_application
+:geospatial_application rdf:type owl:Class ;
+                        rdfs:subClassOf :application ;
+                        rdfs:label "geospatial application" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geospatial_data
+:geospatial_data rdf:type owl:Class ;
+                 rdfs:subClassOf :data ;
+                 rdfs:label "geospatial data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geospatial_information_crowdsourcing
+:geospatial_information_crowdsourcing rdf:type owl:Class ;
+                                      rdfs:subClassOf :crowdsourcing ;
+                                      rdfs:label "geospatial information crowdsourcing" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geospatial_service
+:geospatial_service rdf:type owl:Class ;
+                    rdfs:subClassOf :service ;
+                    rdfs:label "geospatial service" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geospatial_web_application
+:geospatial_web_application rdf:type owl:Class ;
+                            rdfs:subClassOf :application ;
+                            rdfs:label "geospatial web application" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geotagged_image
+:geotagged_image rdf:type owl:Class ;
+                 rdfs:subClassOf :image ;
+                 rdfs:label "geotagged image" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geotagged_social_media
+:geotagged_social_media rdf:type owl:Class ;
+                        rdfs:subClassOf :media ;
+                        rdfs:label "geotagged social media" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geotagged_social_media_data
+:geotagged_social_media_data rdf:type owl:Class ;
+                             rdfs:subClassOf :data ;
+                             rdfs:label "geotagged social media data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#geotagged_twitter_data
+:geotagged_twitter_data rdf:type owl:Class ;
+                        rdfs:subClassOf :geotagged_social_media_data ;
+                        rdfs:label "geotagged twitter data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#giscience_community
+:giscience_community rdf:type owl:Class ;
+                     rdfs:subClassOf :community ;
+                     rdfs:label "giscience community" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#global_positioning_system
+:global_positioning_system rdf:type owl:Class ;
+                           rdfs:subClassOf :system ;
+                           rdfs:label "global positioning system" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#global_sensor_network
+:global_sensor_network rdf:type owl:Class ;
+                       rdfs:subClassOf :sensor_network ;
+                       rdfs:label "global sensor network" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#google_map
+:google_map rdf:type owl:Class ;
+            rdfs:subClassOf :map ;
+            rdfs:label "google map" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#googlemaps_platform
+:googlemaps_platform rdf:type owl:Class ;
+                     rdfs:subClassOf :platform ;
+                     rdfs:label "googlemaps platform" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#government_agency
+:government_agency rdf:type owl:Class ;
+                   rdfs:subClassOf :agency ;
+                   rdfs:label "government agency" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#governmental_crowdsourced_project
+:governmental_crowdsourced_project rdf:type owl:Class ;
+                                   rdfs:subClassOf :project ;
+                                   rdfs:label "governmental crowdsourced project" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#gps_coordinate
+:gps_coordinate rdf:type owl:Class ;
+                rdfs:subClassOf :coordinate ;
+                rdfs:label "gps coordinate" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#gps_metadata
+:gps_metadata rdf:type owl:Class ;
+              rdfs:subClassOf :metadata ;
+              rdfs:label "gps metadata" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#gps_sensor
+:gps_sensor rdf:type owl:Class ;
+            rdfs:subClassOf :sensor ;
+            rdfs:label "gps sensor" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#ground-truth_data_set
+:ground-truth_data_set rdf:type owl:Class ;
+                       rdfs:subClassOf :dataset ;
+                       rdfs:label "ground-truth data set" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#hand-crafted_feature
+:hand-crafted_feature rdf:type owl:Class ;
+                      rdfs:subClassOf :feature ;
+                      rdfs:label "hand-crafted feature" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#handheld_device
+:handheld_device rdf:type owl:Class ;
+                 rdfs:subClassOf :device ;
+                 rdfs:label "handheld device" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#harmonized_method
+:harmonized_method rdf:type owl:Class ;
+                   rdfs:subClassOf :method ;
+                   rdfs:label "harmonized method" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#harmonized_monitoring_procedure
+:harmonized_monitoring_procedure rdf:type owl:Class ;
+                                 rdfs:subClassOf :procedure ;
+                                 rdfs:label "harmonized monitoring procedure" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#harvesting_data
+:harvesting_data rdf:type owl:Class ;
+                 rdfs:subClassOf wn:activity ;
+                 rdfs:label "harvesting data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#heart-rate_measurement
+:heart-rate_measurement rdf:type owl:Class ;
+                        rdfs:subClassOf :measurement ;
+                        rdfs:label "heart-rate measurement" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#heavy-tailed_distribution
+:heavy-tailed_distribution rdf:type owl:Class ;
+                           rdfs:subClassOf :distribution ;
+                           rdfs:label "heavy-tailed distribution" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#heterogeneity
+:heterogeneity rdf:type owl:Class ;
+               rdfs:subClassOf wn:attribute ;
+               rdfs:label "heterogeneity" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#heterogeneous_quality
+:heterogeneous_quality rdf:type owl:Class ;
+                       rdfs:subClassOf :quality ;
+                       rdfs:label "heterogeneous quality" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#hierarchical_agglomerative_clustering
+:hierarchical_agglomerative_clustering rdf:type owl:Class ;
+                                       rdfs:subClassOf :clustering ;
+                                       rdfs:label "hierarchical agglomerative clustering" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#hierarchical_clustering
+:hierarchical_clustering rdf:type owl:Class ;
+                         rdfs:subClassOf :clustering ;
+                         rdfs:label "hierarchical clustering" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#high_contributor
+:high_contributor rdf:type owl:Class ;
+                  rdfs:subClassOf :contributor ;
+                  rdfs:label "high contributor" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#high_level_task
+:high_level_task rdf:type owl:Class ;
+                 rdfs:subClassOf :task ;
+                 rdfs:label "high level task" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#high_resolution_satellite_image
+:high_resolution_satellite_image rdf:type owl:Class ;
+                                 rdfs:subClassOf :image ;
+                                 rdfs:label "high resolution satellite image" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#high_terminological_heterogeneity
+:high_terminological_heterogeneity rdf:type owl:Class ;
+                                   rdfs:subClassOf :heterogeneity ;
+                                   rdfs:label "high terminological heterogeneity" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#hot-spot_analysis
+:hot-spot_analysis rdf:type owl:Class ;
+                   rdfs:subClassOf :analysis ;
+                   rdfs:label "hot-spot analysis" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#human-centered_geospatial_application
+:human-centered_geospatial_application rdf:type owl:Class ;
+                                       rdfs:subClassOf :application ;
+                                       rdfs:label "human-centered geospatial application" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#human-machine_interaction
+:human-machine_interaction rdf:type owl:Class ;
+                           rdfs:subClassOf :interaction ;
+                           rdfs:label "human-machine interaction" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#human_experience
+:human_experience rdf:type owl:Class ;
+                  rdfs:subClassOf :experience ;
+                  rdfs:label "human experience" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#human_geography
+:human_geography rdf:type owl:Class ;
+                 rdfs:subClassOf :geography ;
+                 rdfs:label "human geography" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#human_sensing
+:human_sensing rdf:type owl:Class ;
+               rdfs:subClassOf :sensing ;
+               rdfs:label "human sensing" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#human_sensor
+:human_sensor rdf:type owl:Class ;
+              owl:equivalentClass [ owl:intersectionOf ( :sensor
+                                                         wn:person
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
+              rdfs:subClassOf :sensor ;
+              rdfs:label "human sensor" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#humanenvironment_interaction
+:humanenvironment_interaction rdf:type owl:Class ;
+                              rdfs:subClassOf :interaction ;
+                              rdfs:label "humanenvironment interaction" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#humanitarian-aid_organization
+:humanitarian-aid_organization rdf:type owl:Class ;
+                               rdfs:subClassOf :organization ;
+                               rdfs:label "humanitarian-aid organization" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#humidity_sensor
+:humidity_sensor rdf:type owl:Class ;
+                 rdfs:subClassOf :sensing_device ,
+                                 :sensor ;
+                 rdfs:label "humidity sensor" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#hybrid_geography
+:hybrid_geography rdf:type owl:Class ;
+                  rdfs:subClassOf :geography ;
+                  rdfs:label "hybrid geography" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#hydrological_observation
+:hydrological_observation rdf:type owl:Class ;
+                          rdfs:subClassOf :observation ;
+                          rdfs:label "hydrological observation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#hydrological_service
+:hydrological_service rdf:type owl:Class ;
+                      rdfs:subClassOf :service ;
+                      rdfs:label "hydrological service" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#image
+:image rdf:type owl:Class ;
+       rdfs:subClassOf :information_representation_object_ ;
+       rdfs:label "image" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#image_quality
+:image_quality rdf:type owl:Class ;
+               rdfs:subClassOf :quality ;
+               rdfs:label "image quality" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#impact_on_other_contributor
+:impact_on_other_contributor rdf:type owl:Class ;
+                             rdfs:subClassOf :contributor ;
+                             rdfs:label "impact on other contributor" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#indoor_map
+:indoor_map rdf:type owl:Class ;
+            rdfs:subClassOf :map ;
+            rdfs:label "indoor map" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#informal_language
+:informal_language rdf:type owl:Class ;
+                   rdfs:subClassOf :language ;
+                   rdfs:label "informal language" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#information
+:information rdf:type owl:Class ;
+             rdfs:label "information" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#information_extraction
+:information_extraction rdf:type owl:Class ;
+                        rdfs:subClassOf :extraction ;
+                        rdfs:label "information extraction" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#information_representation_object_
+:information_representation_object_ rdf:type owl:Class ;
+                                    owl:equivalentClass :visual_object ;
+                                    rdfs:label "information representation object " .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#information_use
+:information_use rdf:type owl:Class ;
+                 rdfs:subClassOf :use ;
+                 rdfs:label "information use" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#infrastructure
+:infrastructure rdf:type owl:Class ;
+                rdfs:subClassOf :information_representation_object_ ;
+                rdfs:label "infrastructure" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#innovation
+:innovation rdf:type owl:Class ;
+            rdfs:subClassOf wn:activity ;
+            rdfs:label "innovation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#innovative_technique
+:innovative_technique rdf:type owl:Class ;
+                      rdfs:subClassOf :technique ;
+                      rdfs:label "innovative technique" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#inspire_service
+:inspire_service rdf:type owl:Class ;
+                 rdfs:subClassOf :service ;
+                 rdfs:label "inspire service" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#instagram_content
+:instagram_content rdf:type owl:Class ;
+                   rdfs:subClassOf :content ;
+                   rdfs:label "instagram content" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#instagram_extractor_tool
+:instagram_extractor_tool rdf:type owl:Class ;
+                          rdfs:subClassOf :tool ;
+                          rdfs:label "instagram extractor tool" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#instant_messaging_service
+:instant_messaging_service rdf:type owl:Class ;
+                           rdfs:subClassOf :service ;
+                           rdfs:label "instant messaging service" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#instrumental_precision
+:instrumental_precision rdf:type owl:Class ;
+                        rdfs:subClassOf :precision ;
+                        rdfs:label "instrumental precision" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#instrumentation
+:instrumentation rdf:type owl:Class ;
+                 rdfs:comment "in the wordnet sense: an artifact (or system of artifacts) that is instrumental in accomplishing some end" ;
+                 rdfs:label "instrumentation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#integrative_management
+:integrative_management rdf:type owl:Class ;
+                        rdfs:subClassOf :management ;
+                        rdfs:label "integrative management" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#intelligence
+:intelligence rdf:type owl:Class ;
+              rdfs:label "intelligence" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#interaction
+:interaction rdf:type owl:Class ;
+             rdfs:label "interaction" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#interactive_map
+:interactive_map rdf:type owl:Class ;
+                 rdfs:subClassOf :map ;
+                 rdfs:label "interactive map" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#interactive_technique
+:interactive_technique rdf:type owl:Class ;
+                       rdfs:subClassOf :technique ;
+                       rdfs:label "interactive technique" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#interface
+:interface rdf:type owl:Class ;
+           rdfs:subClassOf :software ;
+           rdfs:label "interface" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#internal_linear_structure
+:internal_linear_structure rdf:type owl:Class ;
+                           rdfs:subClassOf :structure ;
+                           rdfs:label "internal linear structure" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#internet-based_application
+:internet-based_application rdf:type owl:Class ;
+                            rdfs:subClassOf :application ;
+                            rdfs:label "internet-based application" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#intersection_model
+:intersection_model rdf:type owl:Class ;
+                    rdfs:subClassOf :model ;
+                    rdfs:label "intersection model" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#intrinsic_and_extrinsic_characteristic
+:intrinsic_and_extrinsic_characteristic rdf:type owl:Class ;
+                                        rdfs:subClassOf :characteristic ;
+                                        rdfs:label "intrinsic and extrinsic characteristic" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#intrinsic_and_extrinsic_geographic_property
+:intrinsic_and_extrinsic_geographic_property rdf:type owl:Class ;
+                                             rdfs:subClassOf wn:attribute ;
+                                             rdfs:label "intrinsic and extrinsic geographic property" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#intrinsic_quality
+:intrinsic_quality rdf:type owl:Class ;
+                   rdfs:subClassOf :quality ;
+                   rdfs:label "intrinsic quality" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#invasive_and_disease_vector_species
+:invasive_and_disease_vector_species rdf:type owl:Class ;
+                                     rdfs:subClassOf :species ;
+                                     rdfs:label "invasive and disease vector species" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#investigation
+:investigation rdf:type owl:Class ;
+               rdfs:subClassOf wn:activity ;
+               rdfs:label "investigation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#k-means_algorithm
+:k-means_algorithm rdf:type owl:Class ;
+                   rdfs:subClassOf :algorithm ;
+                   rdfs:label "k-means algorithm" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#knowledge
+:knowledge rdf:type owl:Class ;
+           rdfs:label "knowledge" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#knowledge_organization_system
+:knowledge_organization_system rdf:type owl:Class ;
+                               rdfs:subClassOf :system ;
+                               rdfs:label "knowledge organization system" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#land_administration
+:land_administration rdf:type owl:Class ;
+                     rdfs:subClassOf :administration ;
+                     rdfs:label "land administration" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#land_administration_and_management
+:land_administration_and_management rdf:type owl:Class ;
+                                    rdfs:subClassOf :management ;
+                                    rdfs:label "land administration and management" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#land_administrative_project
+:land_administrative_project rdf:type owl:Class ;
+                             rdfs:subClassOf :project ;
+                             rdfs:label "land administrative project" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#land_cover
+:land_cover rdf:type owl:Class ;
+            rdfs:subClassOf :cover ;
+            rdfs:label "land cover" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#land_management_policy
+:land_management_policy rdf:type owl:Class ;
+                        rdfs:subClassOf :policy ;
+                        rdfs:label "land management policy" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#land_use
+:land_use rdf:type owl:Class ;
+          rdfs:subClassOf :discipline ;
+          rdfs:label "land use" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#landmark
+:landmark rdf:type owl:Class ;
+          rdfs:subClassOf :geographic_object_ ;
+          rdfs:label "landmark" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#language
+:language rdf:type owl:Class ;
+          rdfs:label "language" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#large-scale_map
+:large-scale_map rdf:type owl:Class ;
+                 rdfs:subClassOf :map ;
+                 rdfs:label "large-scale map" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#large_data
+:large_data rdf:type owl:Class ;
+            rdfs:subClassOf :data ;
+            rdfs:label "large data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#large_data_collection
+:large_data_collection rdf:type owl:Class ;
+                       rdfs:subClassOf :data_collection ;
+                       rdfs:label "large data collection" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#learning_process
+:learning_process rdf:type owl:Class ;
+                  rdfs:subClassOf :process ;
+                  rdfs:label "learning process" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#lexicon-based_approach
+:lexicon-based_approach rdf:type owl:Class ;
+                        rdfs:subClassOf :approach ;
+                        rdfs:label "lexicon-based approach" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#linked_data
+:linked_data rdf:type owl:Class ;
+             rdfs:subClassOf :data ;
+             rdfs:label "linked data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#linked_data_paradigm
+:linked_data_paradigm rdf:type owl:Class ;
+                      rdfs:subClassOf :paradigm ;
+                      rdfs:label "linked data paradigm" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#local_authority
+:local_authority rdf:type owl:Class ;
+                 rdfs:subClassOf :authority ;
+                 rdfs:label "local authority" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#local_context
+:local_context rdf:type owl:Class ;
+               rdfs:subClassOf :context ;
+               rdfs:label "local context" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#local_geospatial_information
+:local_geospatial_information rdf:type owl:Class ;
+                              rdfs:subClassOf :geographic_information ;
+                              rdfs:label "local geospatial information" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#local_information
+:local_information rdf:type owl:Class ;
+                   rdfs:subClassOf :information ;
+                   rdfs:label "local information" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#local_knowledge
+:local_knowledge rdf:type owl:Class ;
+                 rdfs:subClassOf :knowledge ;
+                 rdfs:label "local knowledge" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#local_spatial_distribution
+:local_spatial_distribution rdf:type owl:Class ;
+                            rdfs:subClassOf :distribution ;
+                            rdfs:label "local spatial distribution" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#location
+:location rdf:type owl:Class ;
+          rdfs:subClassOf :geographic_object_ ;
+          rdfs:label "location" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#location-based_service
+:location-based_service rdf:type owl:Class ;
+                        rdfs:subClassOf :service ;
+                        rdfs:label "location-based service" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#location-based_social_platform
+:location-based_social_platform rdf:type owl:Class ;
+                                rdfs:subClassOf :platform ;
+                                rdfs:label "location-based social platform" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#location_based_service
+:location_based_service rdf:type owl:Class ;
+                        rdfs:subClassOf :service ;
+                        rdfs:label "location based service" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#location_recognition
+:location_recognition rdf:type owl:Class ;
+                      rdfs:subClassOf :recognition ;
+                      rdfs:label "location recognition" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#location_sensing_device
+:location_sensing_device rdf:type owl:Class ;
+                         rdfs:subClassOf :device ;
+                         rdfs:label "location sensing device" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#locations_and_route
+:locations_and_route rdf:type owl:Class ;
+                     rdfs:subClassOf :route ;
+                     rdfs:label "locations and route" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#logical_consistency
+:logical_consistency rdf:type owl:Class ;
+                     rdfs:subClassOf :consistency ;
+                     rdfs:label "logical consistency" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#machine
+:machine rdf:type owl:Class ;
+         rdfs:subClassOf :instrumentation ;
+         rdfs:label "machine" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#machine_learning
+:machine_learning rdf:type owl:Class ;
+                  rdfs:subClassOf :method ;
+                  rdfs:label "machine learning" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#making
+:making rdf:type owl:Class ;
+        rdfs:subClassOf wn:activity ;
+        rdfs:label "making" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#management
+:management rdf:type owl:Class ;
+            rdfs:subClassOf wn:activity ;
+            rdfs:label "management" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#manual_visual_investigation
+:manual_visual_investigation rdf:type owl:Class ;
+                             rdfs:subClassOf :investigation ;
+                             rdfs:label "manual visual investigation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#map
+:map rdf:type owl:Class ;
+     rdfs:subClassOf :visual_object ;
+     rdfs:label "map" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#map-based_social_networking_platform
+:map-based_social_networking_platform rdf:type owl:Class ;
+                                      rdfs:subClassOf :platform ;
+                                      rdfs:label "map-based social networking platform" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#map_service
+:map_service rdf:type owl:Class ;
+             rdfs:subClassOf :service ;
+             rdfs:label "map service" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#mapping
+:mapping rdf:type owl:Class ;
+         rdfs:subClassOf wn:activity ;
+         rdfs:label "mapping" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#mapping_activity
+:mapping_activity rdf:type owl:Class ;
+                  rdfs:subClassOf wn:activity ;
+                  rdfs:label "mapping activity" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#mapping_agency
+:mapping_agency rdf:type owl:Class ;
+                rdfs:subClassOf :agency ;
+                rdfs:label "mapping agency" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#mapping_service
+:mapping_service rdf:type owl:Class ;
+                 rdfs:subClassOf :service ;
+                 rdfs:label "mapping service" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#mashup_tool
+:mashup_tool rdf:type owl:Class ;
+             rdfs:subClassOf :tool ;
+             rdfs:label "mashup tool" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#mass_movement_pattern
+:mass_movement_pattern rdf:type owl:Class ;
+                       rdfs:subClassOf :pattern ;
+                       rdfs:label "mass movement pattern" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#massive_geographic_information
+:massive_geographic_information rdf:type owl:Class ;
+                                rdfs:subClassOf :geographic_information ;
+                                rdfs:label "massive geographic information" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#mathematical_knowledge
+:mathematical_knowledge rdf:type owl:Class ;
+                        rdfs:subClassOf :knowledge ;
+                        rdfs:label "mathematical knowledge" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#meaningful_query
+:meaningful_query rdf:type owl:Class ;
+                  rdfs:subClassOf :query ;
+                  rdfs:label "meaningful query" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#measurement
+:measurement rdf:type owl:Class ;
+             rdfs:subClassOf wn:activity ;
+             rdfs:label "measurement" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#measurement_accuracy
+:measurement_accuracy rdf:type owl:Class ;
+                      rdfs:subClassOf :accuracy ;
+                      rdfs:label "measurement accuracy" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#media
+:media rdf:type owl:Class ;
+       rdfs:label "media" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#message
+:message rdf:type owl:Class ;
+         rdfs:label "message" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#meta-level_query
+:meta-level_query rdf:type owl:Class ;
+                  rdfs:subClassOf :query ;
+                  rdfs:label "meta-level query" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#metadata
+:metadata rdf:type owl:Class ;
+          rdfs:label "metadata" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#meteorological_measurement
+:meteorological_measurement rdf:type owl:Class ;
+                            rdfs:subClassOf :measurement ;
+                            rdfs:label "meteorological measurement" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#method
+:method rdf:type owl:Class ;
+        rdfs:label "method" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#microblogging_platform
+:microblogging_platform rdf:type owl:Class ;
+                        rdfs:subClassOf :platform ;
+                        rdfs:label "microblogging platform" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#microblogging_service
+:microblogging_service rdf:type owl:Class ;
+                       rdfs:subClassOf :service ;
+                       rdfs:label "microblogging service" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#mining
+:mining rdf:type owl:Class ;
+        rdfs:subClassOf :method ;
+        rdfs:label "mining" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#mining_process
+:mining_process rdf:type owl:Class ;
+                rdfs:subClassOf :process ;
+                rdfs:label "mining process" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#mobile_application
+:mobile_application rdf:type owl:Class ;
+                    rdfs:subClassOf :application ;
+                    rdfs:label "mobile application" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#mobile_crowd_sensing
+:mobile_crowd_sensing rdf:type owl:Class ;
+                      rdfs:subClassOf :sensing ;
+                      rdfs:label "mobile crowd sensing" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#mobile_crowdsourcing
+:mobile_crowdsourcing rdf:type owl:Class ;
+                      rdfs:subClassOf :crowdsourcing ;
+                      rdfs:label "mobile crowdsourcing" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#mobile_device
+:mobile_device rdf:type owl:Class ;
+               rdfs:subClassOf :device ;
+               rdfs:label "mobile device" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#mobile_sensor
+:mobile_sensor rdf:type owl:Class ;
+               rdfs:subClassOf :sensor ;
+               rdfs:label "mobile sensor" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#mobility
+:mobility rdf:type owl:Class ;
+          rdfs:subClassOf :discipline ;
+          rdfs:label "mobility" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#model
+:model rdf:type owl:Class ;
+       rdfs:label "model" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#model-driven_decision_making
+:model-driven_decision_making rdf:type owl:Class ;
+                              rdfs:subClassOf :making ;
+                              rdfs:label "model-driven decision making" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#monitoring
+:monitoring rdf:type owl:Class ;
+            rdfs:subClassOf wn:activity ;
+            rdfs:label "monitoring" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#monitoring_system
+:monitoring_system rdf:type owl:Class ;
+                   rdfs:subClassOf :system ;
+                   rdfs:label "monitoring system" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#morphological_analysis
+:morphological_analysis rdf:type owl:Class ;
+                        rdfs:subClassOf :analysis ;
+                        rdfs:label "morphological analysis" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#mosquito_control_agency
+:mosquito_control_agency rdf:type owl:Class ;
+                         rdfs:subClassOf :agency ;
+                         rdfs:label "mosquito control agency" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#multi-proxy_validation_system
+:multi-proxy_validation_system rdf:type owl:Class ;
+                               rdfs:subClassOf :system ;
+                               rdfs:label "multi-proxy validation system" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#multimedia_content
+:multimedia_content rdf:type owl:Class ;
+                    rdfs:subClassOf :content ;
+                    rdfs:label "multimedia content" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#multimedia_content_analysis
+:multimedia_content_analysis rdf:type owl:Class ;
+                             rdfs:subClassOf :analysis ;
+                             rdfs:label "multimedia content analysis" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#multimedia_data
+:multimedia_data rdf:type owl:Class ;
+                 rdfs:subClassOf :data ;
+                 rdfs:label "multimedia data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#multiple_map_display
+:multiple_map_display rdf:type owl:Class ;
+                      rdfs:subClassOf :display ;
+                      rdfs:label "multiple map display" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#named-entity_recognition
+:named-entity_recognition rdf:type owl:Class ;
+                          rdfs:subClassOf :recognition ;
+                          rdfs:label "named-entity recognition" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#named_entity_extraction
+:named_entity_extraction rdf:type owl:Class ;
+                         rdfs:subClassOf :extraction ;
+                         rdfs:label "named entity extraction" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#named_entity_recognition
+:named_entity_recognition rdf:type owl:Class ;
+                          rdfs:subClassOf :recognition ;
+                          rdfs:label "named entity recognition" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#national_mapping_agency
+:national_mapping_agency rdf:type owl:Class ;
+                         rdfs:subClassOf :agency ;
+                         rdfs:label "national mapping agency" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#natural_city
+:natural_city rdf:type owl:Class ;
+              rdfs:subClassOf :city ;
+              rdfs:label "natural city" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#natural_disaster_management
+:natural_disaster_management rdf:type owl:Class ;
+                             rdfs:subClassOf :management ;
+                             rdfs:label "natural disaster management" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#natural_geographic_feature
+:natural_geographic_feature rdf:type owl:Class ;
+                            rdfs:subClassOf :feature ;
+                            rdfs:label "natural geographic feature" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#natural_language
+:natural_language rdf:type owl:Class ;
+                  rdfs:subClassOf :language ;
+                  rdfs:label "natural language" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#natural_language_processing
+:natural_language_processing rdf:type owl:Class ;
+                             rdfs:subClassOf :processing ;
+                             rdfs:label "natural language processing" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#natural_phenomena
+:natural_phenomena rdf:type owl:Class ;
+                   rdfs:subClassOf :phenomena ;
+                   rdfs:label "natural phenomena" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#navigation
+:navigation rdf:type owl:Class ;
+            rdfs:subClassOf wn:activity ;
+            rdfs:label "navigation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#navigation_system
+:navigation_system rdf:type owl:Class ;
+                   rdfs:subClassOf :system ;
+                   rdfs:label "navigation system" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#nested_reinforcement_learning
+:nested_reinforcement_learning rdf:type owl:Class ;
+                               rdfs:subClassOf :machine_learning ;
+                               rdfs:label "nested reinforcement learning" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#network
+:network rdf:type owl:Class ;
+         rdfs:label "network" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#new_source
+:new_source rdf:type owl:Class ;
+            rdfs:subClassOf :source ;
+            rdfs:label "new source" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#nighttime_image
+:nighttime_image rdf:type owl:Class ;
+                 rdfs:subClassOf :image ;
+                 rdfs:label "nighttime image" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#noise_level_sensing
+:noise_level_sensing rdf:type owl:Class ;
+                     rdfs:subClassOf :sensing ;
+                     rdfs:label "noise level sensing" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#non-expert_contribution
+:non-expert_contribution rdf:type owl:Class ;
+                         rdfs:subClassOf :contribution ;
+                         rdfs:label "non-expert contribution" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#non-governmental_organization
+:non-governmental_organization rdf:type owl:Class ;
+                               rdfs:subClassOf :organization ;
+                               rdfs:label "non-governmental organization" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#non-professional_contributor
+:non-professional_contributor rdf:type owl:Class ;
+                              rdfs:subClassOf :contributor ;
+                              rdfs:label "non-professional contributor" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#not_expert
+:not_expert rdf:type owl:Class ;
+            rdfs:subClassOf :expert ;
+            rdfs:label "not expert" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#novice_practice
+:novice_practice rdf:type owl:Class ;
+                 rdfs:subClassOf :practice ;
+                 rdfs:label "novice practice" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#nsdi_standard
+:nsdi_standard rdf:type owl:Class ;
+               rdfs:subClassOf :standard ;
+               rdfs:label "nsdi standard" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#object-based_approach
+:object-based_approach rdf:type owl:Class ;
+                       rdfs:subClassOf :approach ;
+                       rdfs:label "object-based approach" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#object_feature
+:object_feature rdf:type owl:Class ;
+                rdfs:subClassOf :feature ;
+                rdfs:label "object feature" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#observation
+:observation rdf:type owl:Class ;
+             rdfs:subClassOf wn:activity ;
+             rdfs:label "observation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#observer_quality
+:observer_quality rdf:type owl:Class ;
+                  rdfs:subClassOf :quality ;
+                  rdfs:label "observer quality" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#of_vgi_and_crowdsourcing_application
+:of_vgi_and_crowdsourcing_application rdf:type owl:Class ;
+                                      rdfs:subClassOf :application ;
+                                      rdfs:label "of vgi and crowdsourcing application" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#official_digital_information
+:official_digital_information rdf:type owl:Class ;
+                              rdfs:subClassOf :information ;
+                              rdfs:label "official digital information" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#official_mapping_agency
+:official_mapping_agency rdf:type owl:Class ;
+                         rdfs:subClassOf :agency ;
+                         rdfs:label "official mapping agency" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#official_procedure
+:official_procedure rdf:type owl:Class ;
+                    rdfs:subClassOf :procedure ;
+                    rdfs:label "official procedure" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#offline_project
+:offline_project rdf:type owl:Class ;
+                 rdfs:subClassOf :project ;
+                 rdfs:label "offline project" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#ogc_standard
+:ogc_standard rdf:type owl:Class ;
+              rdfs:subClassOf :standard ;
+              rdfs:label "ogc standard" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#online_collaborative_tool
+:online_collaborative_tool rdf:type owl:Class ;
+                           rdfs:subClassOf :tool ;
+                           rdfs:label "online collaborative tool" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#online_database
+:online_database rdf:type owl:Class ;
+                 rdfs:subClassOf :database ;
+                 rdfs:label "online database" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#online_dynamic_map
+:online_dynamic_map rdf:type owl:Class ;
+                    rdfs:subClassOf :map ;
+                    rdfs:label "online dynamic map" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#online_orthophoto
+:online_orthophoto rdf:type owl:Class ;
+                   rdfs:subClassOf :orthophoto ;
+                   rdfs:label "online orthophoto" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#open-source_software
+:open-source_software rdf:type owl:Class ;
+                      rdfs:subClassOf :software ;
+                      rdfs:label "open-source software" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#open_resource
+:open_resource rdf:type owl:Class ;
+               rdfs:subClassOf :information_representation_object_ ;
+               rdfs:label "open resource" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#open_source_project
+:open_source_project rdf:type owl:Class ;
+                     rdfs:subClassOf :project ;
+                     rdfs:label "open source project" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#open_standard
+:open_standard rdf:type owl:Class ;
+               rdfs:subClassOf :standard ;
+               rdfs:label "open standard" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#open_street_map
+:open_street_map rdf:type owl:Class ;
+                 rdfs:subClassOf :map ;
+                 rdfs:label "open street map" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#opinion_mining
+:opinion_mining rdf:type owl:Class ;
+                rdfs:subClassOf :mining ;
+                rdfs:label "opinion mining" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#organization
+:organization rdf:type owl:Class ;
+              rdfs:label "organization" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#orthophoto
+:orthophoto rdf:type owl:Class ;
+            rdfs:subClassOf :information_representation_object_ ;
+            rdfs:label "orthophoto" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#osm_api
+:osm_api rdf:type owl:Class ;
+         rdfs:subClassOf :api ;
+         rdfs:label "osm api" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#osm_data
+:osm_data rdf:type owl:Class ;
+          rdfs:subClassOf :geographic_data ;
+          rdfs:label "osm data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#osm_editor
+:osm_editor rdf:type owl:Class ;
+            rdfs:subClassOf :editor ;
+            rdfs:label "osm editor" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#osm_feature
+:osm_feature rdf:type owl:Class ;
+             rdfs:subClassOf :feature ;
+             rdfs:label "osm feature" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#osm_footprint
+:osm_footprint rdf:type owl:Class ;
+               rdfs:subClassOf :footprint ;
+               rdfs:label "osm footprint" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#osm_place
+:osm_place rdf:type owl:Class ;
+           rdfs:subClassOf :place ;
+           rdfs:label "osm place" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#overall_accuracy
+:overall_accuracy rdf:type owl:Class ;
+                  rdfs:subClassOf :accuracy ;
+                  rdfs:label "overall accuracy" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#overlay_analysis
+:overlay_analysis rdf:type owl:Class ;
+                  rdfs:subClassOf :analysis ;
+                  rdfs:label "overlay analysis" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#paradigm
+:paradigm rdf:type owl:Class ;
+          rdfs:label "paradigm" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#parking_place
+:parking_place rdf:type owl:Class ;
+               rdfs:subClassOf :place ;
+               rdfs:label "parking place" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#parking_sensor
+:parking_sensor rdf:type owl:Class ;
+                rdfs:subClassOf :sensing_device ,
+                                :sensor ;
+                rdfs:label "parking sensor" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#participation
+:participation rdf:type owl:Class ;
+               rdfs:subClassOf wn:attribute ;
+               rdfs:label "participation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#participation_pattern
+:participation_pattern rdf:type owl:Class ;
+                       rdfs:subClassOf :pattern ;
+                       rdfs:label "participation pattern" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#passive_and_active_surveillance
+:passive_and_active_surveillance rdf:type owl:Class ;
+                                 rdfs:subClassOf :surveillance ;
+                                 rdfs:label "passive and active surveillance" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#pattern
+:pattern rdf:type owl:Class ;
+         rdfs:subClassOf wn:attribute ;
+         rdfs:label "pattern" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#pedestrian_navigation
+:pedestrian_navigation rdf:type owl:Class ;
+                       rdfs:subClassOf :navigation ;
+                       rdfs:label "pedestrian navigation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#peer_production
+:peer_production rdf:type owl:Class ;
+                 rdfs:subClassOf :production ;
+                 rdfs:label "peer production" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#perceive_and_evaluate_environment
+:perceive_and_evaluate_environment rdf:type owl:Class ;
+                                   rdfs:subClassOf wn:activity ;
+                                   rdfs:label "perceive and evaluate environment" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#perspective_cadastral_model
+:perspective_cadastral_model rdf:type owl:Class ;
+                             rdfs:subClassOf :model ;
+                             rdfs:label "perspective cadastral model" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#phenomena
+:phenomena rdf:type owl:Class ;
+           rdfs:label "phenomena" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#photos_location
+:photos_location rdf:type owl:Class ;
+                 rdfs:subClassOf :location ;
+                 rdfs:label "photos location" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#physical_sensor
+:physical_sensor rdf:type owl:Class ;
+                 rdfs:subClassOf :sensor ;
+                 rdfs:label "physical sensor" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#place
+:place rdf:type owl:Class ;
+       rdfs:subClassOf :geographic_object_ ;
+       rdfs:label "place" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#place_entity
+:place_entity rdf:type owl:Class ;
+              rdfs:subClassOf :geographic_object_ ;
+              rdfs:label "place entity" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#planning
+:planning rdf:type owl:Class ;
+          rdfs:subClassOf wn:activity ;
+          rdfs:label "planning" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#planning_analysis
+:planning_analysis rdf:type owl:Class ;
+                   rdfs:subClassOf :analysis ;
+                   rdfs:label "planning analysis" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#planning_intelligence
+:planning_intelligence rdf:type owl:Class ;
+                       rdfs:subClassOf :intelligence ;
+                       rdfs:label "planning intelligence" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#platform
+:platform rdf:type owl:Class ;
+          rdfs:subClassOf :software ;
+          rdfs:label "platform" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#point-to-point_navigation
+:point-to-point_navigation rdf:type owl:Class ;
+                           rdfs:subClassOf :navigation ;
+                           rdfs:label "point-to-point navigation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#polarity_classifier
+:polarity_classifier rdf:type owl:Class ;
+                     rdfs:subClassOf :classifier ;
+                     rdfs:label "polarity classifier" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#policy
+:policy rdf:type owl:Class ;
+        rdfs:label "policy" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#policy_making
+:policy_making rdf:type owl:Class ;
+               rdfs:subClassOf :making ;
+               rdfs:label "policy making" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#poorly_structured_dataset
+:poorly_structured_dataset rdf:type owl:Class ;
+                           rdfs:subClassOf :dataset ;
+                           rdfs:label "poorly structured dataset" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#position_accuracy
+:position_accuracy rdf:type owl:Class ;
+                   rdfs:subClassOf :accuracy ;
+                   rdfs:label "position accuracy" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#position_information
+:position_information rdf:type owl:Class ;
+                      rdfs:subClassOf :geographic_information ;
+                      rdfs:label "position information" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#positional_accuracy
+:positional_accuracy rdf:type owl:Class ;
+                     rdfs:subClassOf :accuracy ;
+                     rdfs:label "positional accuracy" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#postgresql-postgis_database
+:postgresql-postgis_database rdf:type owl:Class ;
+                             rdfs:subClassOf :database ;
+                             rdfs:label "postgresql-postgis database" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#practice
+:practice rdf:type owl:Class ;
+          rdfs:label "practice" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#precision
+:precision rdf:type owl:Class ;
+           rdfs:subClassOf wn:attribute ;
+           rdfs:label "precision" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#predictive_model
+:predictive_model rdf:type owl:Class ;
+                  rdfs:subClassOf :model ;
+                  rdfs:label "predictive model" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#problems_in_public_economy
+:problems_in_public_economy rdf:type owl:Class ;
+                            rdfs:subClassOf :economy ;
+                            rdfs:label "problems in public economy" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#procedure
+:procedure rdf:type owl:Class ;
+           rdfs:subClassOf wn:activity ;
+           rdfs:label "procedure" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#process
+:process rdf:type owl:Class ;
+         rdfs:label "process" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#processing
+:processing rdf:type owl:Class ;
+            rdfs:subClassOf wn:activity ;
+            rdfs:label "processing" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#producers_profile
+:producers_profile rdf:type owl:Class ;
+                   rdfs:subClassOf :profile ;
+                   rdfs:label "producers profile" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#production
+:production rdf:type owl:Class ;
+            rdfs:subClassOf wn:activity ;
+            rdfs:label "production" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#profile
+:profile rdf:type owl:Class ;
+         rdfs:subClassOf wn:attribute ;
+         rdfs:label "profile" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#program
+:program rdf:type owl:Class ;
+         rdfs:label "program" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#project
+:project rdf:type owl:Class ;
+         rdfs:label "project" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#public_administration
+:public_administration rdf:type owl:Class ;
+                       rdfs:subClassOf :administration ;
+                       rdfs:label "public administration" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#public_authority
+:public_authority rdf:type owl:Class ;
+                  rdfs:subClassOf :authority ;
+                  rdfs:label "public authority" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#public_event
+:public_event rdf:type owl:Class ;
+              rdfs:subClassOf :event ;
+              rdfs:label "public event" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#public_observation
+:public_observation rdf:type owl:Class ;
+                    rdfs:subClassOf :observation ;
+                    rdfs:label "public observation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#public_participation
+:public_participation rdf:type owl:Class ;
+                      rdfs:subClassOf :participation ;
+                      rdfs:label "public participation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#public_space_area
+:public_space_area rdf:type owl:Class ;
+                   rdfs:subClassOf :area ;
+                   rdfs:label "public space area" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#public_surveillance_and_control_program
+:public_surveillance_and_control_program rdf:type owl:Class ;
+                                         rdfs:subClassOf :program ;
+                                         rdfs:label "public surveillance and control program" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#qualitative_spatial_analysis
+:qualitative_spatial_analysis rdf:type owl:Class ;
+                              rdfs:subClassOf :analysis ;
+                              rdfs:label "qualitative spatial analysis" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#qualitative_spatial_relation
+:qualitative_spatial_relation rdf:type owl:Class ;
+                              rdfs:subClassOf :spatial_relation ;
+                              rdfs:label "qualitative spatial relation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#quality
+:quality rdf:type owl:Class ;
+         rdfs:subClassOf wn:attribute ;
+         rdfs:label "quality" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#quality_assessment
+:quality_assessment rdf:type owl:Class ;
+                    rdfs:subClassOf :assessment ;
+                    rdfs:label "quality assessment" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#quality_assessment_tool
+:quality_assessment_tool rdf:type owl:Class ;
+                         rdfs:subClassOf :tool ;
+                         rdfs:label "quality assessment tool" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#quality_assurance_editor
+:quality_assurance_editor rdf:type owl:Class ;
+                          rdfs:subClassOf :editor ;
+                          rdfs:label "quality assurance editor" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#quality_control
+:quality_control rdf:type owl:Class ;
+                 rdfs:subClassOf :control ;
+                 rdfs:label "quality control" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#query
+:query rdf:type owl:Class ;
+       rdfs:label "query" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#query_language
+:query_language rdf:type owl:Class ;
+                rdfs:subClassOf :language ;
+                rdfs:label "query language" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#rained_volunteer
+:rained_volunteer rdf:type owl:Class ;
+                  rdfs:subClassOf :volunteer ;
+                  rdfs:label "rained volunteer" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#raster_image
+:raster_image rdf:type owl:Class ;
+              rdfs:subClassOf :image ;
+              rdfs:label "raster image" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#raw_sensor_data
+:raw_sensor_data rdf:type owl:Class ;
+                 rdfs:subClassOf :data ;
+                 rdfs:label "raw sensor data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#real-world_data
+:real-world_data rdf:type owl:Class ;
+                 rdfs:subClassOf :data ;
+                 rdfs:label "real-world data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#real_time_analysis
+:real_time_analysis rdf:type owl:Class ;
+                    rdfs:subClassOf :analysis ;
+                    rdfs:label "real time analysis" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#recognition
+:recognition rdf:type owl:Class ;
+             rdfs:subClassOf :process ;
+             rdfs:label "recognition" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#reference_data
+:reference_data rdf:type owl:Class ;
+                rdfs:subClassOf :data ;
+                rdfs:label "reference data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#reference_system
+:reference_system rdf:type owl:Class ;
+                  rdfs:subClassOf :system ;
+                  rdfs:label "reference system" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#regional_spatial_data_infrastructure
+:regional_spatial_data_infrastructure rdf:type owl:Class ;
+                                      rdfs:subClassOf :infrastructure ;
+                                      rdfs:label "regional spatial data infrastructure" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#relevant_data
+:relevant_data rdf:type owl:Class ;
+               rdfs:subClassOf :data ;
+               rdfs:label "relevant data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#reliable_service
+:reliable_service rdf:type owl:Class ;
+                  rdfs:subClassOf :service ;
+                  rdfs:label "reliable service" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#remote_contribution
+:remote_contribution rdf:type owl:Class ;
+                     rdfs:subClassOf :contribution ;
+                     rdfs:label "remote contribution" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#remote_sensing
+:remote_sensing rdf:type owl:Class ;
+                rdfs:subClassOf :sensing ;
+                rdfs:label "remote sensing" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#remote_sensing_and_automation
+:remote_sensing_and_automation rdf:type owl:Class ;
+                               rdfs:subClassOf :automation ;
+                               rdfs:label "remote sensing and automation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#remote_volunteer
+:remote_volunteer rdf:type owl:Class ;
+                  rdfs:subClassOf :volunteer ;
+                  rdfs:label "remote volunteer" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#representativenes
+:representativenes rdf:type owl:Class ;
+                   rdfs:subClassOf wn:attribute ;
+                   rdfs:label "representativenes" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#research_area
+:research_area rdf:type owl:Class ;
+               rdfs:subClassOf :area ;
+               rdfs:label "research area" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#resulting_dataset
+:resulting_dataset rdf:type owl:Class ;
+                   rdfs:subClassOf :dataset ;
+                   rdfs:label "resulting dataset" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#rewarding_response_for_the_contribution
+:rewarding_response_for_the_contribution rdf:type owl:Class ;
+                                         rdfs:subClassOf :contribution ;
+                                         rdfs:label "rewarding response for the contribution" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#rich_sensing
+:rich_sensing rdf:type owl:Class ;
+              rdfs:subClassOf :sensing ;
+              rdfs:label "rich sensing" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#road_network_data
+:road_network_data rdf:type owl:Class ;
+                   rdfs:subClassOf :geographic_data ;
+                   rdfs:label "road network data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#route
+:route rdf:type owl:Class ;
+       rdfs:subClassOf :geographic_object_ ;
+       rdfs:label "route" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#route_planning
+:route_planning rdf:type owl:Class ;
+                rdfs:subClassOf :planning ;
+                rdfs:label "route planning" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#routing_and_navigation_service
+:routing_and_navigation_service rdf:type owl:Class ;
+                                rdfs:subClassOf :service ;
+                                rdfs:label "routing and navigation service" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#routing_service
+:routing_service rdf:type owl:Class ;
+                 rdfs:subClassOf :service ;
+                 rdfs:label "routing service" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#satellite_image
+:satellite_image rdf:type owl:Class ;
+                 rdfs:subClassOf :image ;
+                 rdfs:label "satellite image" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#satellite_navigation_device
+:satellite_navigation_device rdf:type owl:Class ;
+                             rdfs:subClassOf :device ;
+                             rdfs:label "satellite navigation device" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#scenario
+:scenario rdf:type owl:Class ;
+          rdfs:label "scenario" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#science
+:science rdf:type owl:Class ;
+         rdfs:label "science" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#sdi_model
+:sdi_model rdf:type owl:Class ;
+           rdfs:subClassOf :model ;
+           rdfs:label "sdi model" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#self-produced_content
+:self-produced_content rdf:type owl:Class ;
+                       rdfs:subClassOf :content ,
+                                       :user-generated_content ;
+                       rdfs:label "self-produced content" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#semantic_accuracy
+:semantic_accuracy rdf:type owl:Class ;
+                   rdfs:subClassOf :accuracy ;
+                   rdfs:label "semantic accuracy" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#semantic_characteristic
+:semantic_characteristic rdf:type owl:Class ;
+                         rdfs:subClassOf :characteristic ;
+                         rdfs:label "semantic characteristic" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#semantic_heterogeneity
+:semantic_heterogeneity rdf:type owl:Class ;
+                        rdfs:subClassOf :heterogeneity ;
+                        rdfs:label "semantic heterogeneity" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#semantic_mobility_data
+:semantic_mobility_data rdf:type owl:Class ;
+                        rdfs:subClassOf :data ;
+                        rdfs:label "semantic mobility data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#semantic_property
+:semantic_property rdf:type owl:Class ;
+                   rdfs:subClassOf wn:attribute ;
+                   rdfs:label "semantic property" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#semantic_query
+:semantic_query rdf:type owl:Class ;
+                rdfs:subClassOf :query ;
+                rdfs:label "semantic query" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#semantic_resource
+:semantic_resource rdf:type owl:Class ;
+                   rdfs:subClassOf :data_collection ;
+                   rdfs:label "semantic resource" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#semantic_web_technique
+:semantic_web_technique rdf:type owl:Class ;
+                        rdfs:subClassOf :technique ;
+                        rdfs:label "semantic web technique" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#semi-hybrid_approach
+:semi-hybrid_approach rdf:type owl:Class ;
+                      rdfs:subClassOf :approach ;
+                      rdfs:label "semi-hybrid approach" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#semi-structured_data
+:semi-structured_data rdf:type owl:Class ;
+                      rdfs:subClassOf :data ;
+                      rdfs:label "semi-structured data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#sensed_data
+:sensed_data rdf:type owl:Class ;
+             rdfs:subClassOf :data ;
+             rdfs:label "sensed data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#sensing
+:sensing rdf:type owl:Class ;
+         rdfs:subClassOf wn:activity ;
+         rdfs:label "sensing" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#sensing_device
+:sensing_device rdf:type owl:Class ;
+                rdfs:subClassOf :device ;
+                rdfs:label "sensing device" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#sensing_tool
+:sensing_tool rdf:type owl:Class ;
+              rdfs:subClassOf :tool ;
+              rdfs:label "sensing tool" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#sensor
+:sensor rdf:type owl:Class ;
+        rdfs:subClassOf :instrumentation ;
+        rdfs:label "sensor" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#sensor_network
+:sensor_network rdf:type owl:Class ;
+                rdfs:subClassOf :network ;
+                rdfs:label "sensor network" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#sentiment_analysis
+:sentiment_analysis rdf:type owl:Class ;
+                    rdfs:subClassOf :analysis ;
+                    rdfs:label "sentiment analysis" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#sentiment_analysis_technique
+:sentiment_analysis_technique rdf:type owl:Class ;
+                              rdfs:subClassOf :technique ;
+                              rdfs:label "sentiment analysis technique" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#sentiment_polarity_pattern
+:sentiment_polarity_pattern rdf:type owl:Class ;
+                            rdfs:subClassOf :pattern ;
+                            rdfs:label "sentiment polarity pattern" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#sentimental_analysis
+:sentimental_analysis rdf:type owl:Class ;
+                      rdfs:subClassOf :analysis ;
+                      rdfs:label "sentimental analysis" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#sentiwordnet_classifier
+:sentiwordnet_classifier rdf:type owl:Class ;
+                         rdfs:subClassOf :classifier ;
+                         rdfs:label "sentiwordnet classifier" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#sequential_learning_method
+:sequential_learning_method rdf:type owl:Class ;
+                            rdfs:subClassOf :method ;
+                            rdfs:label "sequential learning method" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#service
+:service rdf:type owl:Class ;
+         rdfs:label "service" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#sfpark_system
+:sfpark_system rdf:type owl:Class ;
+               rdfs:subClassOf :system ;
+               rdfs:label "sfpark system" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#sharing
+:sharing rdf:type owl:Class ;
+         rdfs:subClassOf wn:activity ;
+         rdfs:label "sharing" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#simulation_software
+:simulation_software rdf:type owl:Class ;
+                     rdfs:subClassOf :software ;
+                     rdfs:label "simulation software" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#skilled_expert
+:skilled_expert rdf:type owl:Class ;
+                rdfs:subClassOf :expert ;
+                rdfs:label "skilled expert" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#small_data
+:small_data rdf:type owl:Class ;
+            rdfs:subClassOf :data ;
+            rdfs:label "small data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#smart_city
+:smart_city rdf:type owl:Class ;
+            rdfs:subClassOf :city ;
+            rdfs:label "smart city" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#smart_city_service
+:smart_city_service rdf:type owl:Class ;
+                    rdfs:subClassOf :service ;
+                    rdfs:label "smart city service" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#smart_economy
+:smart_economy rdf:type owl:Class ;
+               rdfs:subClassOf :economy ;
+               rdfs:label "smart economy" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#smart_mobility
+:smart_mobility rdf:type owl:Class ;
+                rdfs:subClassOf :mobility ;
+                rdfs:label "smart mobility" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#smart_sensor
+:smart_sensor rdf:type owl:Class ;
+              rdfs:subClassOf :sensor ;
+              rdfs:label "smart sensor" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#smart_service
+:smart_service rdf:type owl:Class ;
+               rdfs:subClassOf :service ;
+               rdfs:label "smart service" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#smart_urban_mobility
+:smart_urban_mobility rdf:type owl:Class ;
+                      rdfs:subClassOf :mobility ;
+                      rdfs:label "smart urban mobility" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#smarter_city
+:smarter_city rdf:type owl:Class ;
+              rdfs:subClassOf :city ;
+              rdfs:label "smarter city" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#smgi_analytics
+:smgi_analytics rdf:type owl:Class ;
+                rdfs:subClassOf :analytics ;
+                rdfs:label "smgi analytics" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#social_analysis
+:social_analysis rdf:type owl:Class ;
+                 rdfs:subClassOf :analysis ;
+                 rdfs:label "social analysis" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#social_approach
+:social_approach rdf:type owl:Class ;
+                 rdfs:subClassOf :approach ;
+                 rdfs:label "social approach" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#social_data
+:social_data rdf:type owl:Class ;
+             rdfs:subClassOf :data ;
+             rdfs:label "social data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#social_media
+:social_media rdf:type owl:Class ;
+              rdfs:subClassOf :media ;
+              rdfs:label "social media" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#social_media_application_programming_interface
+:social_media_application_programming_interface rdf:type owl:Class ;
+                                                rdfs:subClassOf :interface ;
+                                                rdfs:label "social media application programming interface" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#social_media_data
+:social_media_data rdf:type owl:Class ;
+                   rdfs:subClassOf :social_data ;
+                   rdfs:label "social media data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#social_media_data_analysis
+:social_media_data_analysis rdf:type owl:Class ;
+                            rdfs:subClassOf :analysis ;
+                            rdfs:label "social media data analysis" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#social_media_geographic_information
+:social_media_geographic_information rdf:type owl:Class ;
+                                     rdfs:subClassOf :geographic_information ;
+                                     rdfs:label "social media geographic information" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#social_media_interaction
+:social_media_interaction rdf:type owl:Class ;
+                          rdfs:subClassOf :interaction ;
+                          rdfs:label "social media interaction" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#social_media_location_data
+:social_media_location_data rdf:type owl:Class ;
+                            rdfs:subClassOf :social_media_data ;
+                            rdfs:label "social media location data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#social_network
+:social_network rdf:type owl:Class ;
+                rdfs:subClassOf :socio-technical_system ;
+                rdfs:label "social network" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#social_networking_service
+:social_networking_service rdf:type owl:Class ;
+                           rdfs:subClassOf :service ;
+                           rdfs:label "social networking service" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#social_practice
+:social_practice rdf:type owl:Class ;
+                 rdfs:subClassOf :practice ;
+                 rdfs:label "social practice" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#social_science
+:social_science rdf:type owl:Class ;
+                rdfs:subClassOf :science ;
+                rdfs:label "social science" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#social_sensor
+:social_sensor rdf:type owl:Class ;
+               rdfs:subClassOf :sensor ,
+                               wn:person ;
+               rdfs:label "social sensor" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#socio-technical_system
+:socio-technical_system rdf:type owl:Class ;
+                        rdfs:subClassOf :system ;
+                        rdfs:label "socio-technical system" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#software
+:software rdf:type owl:Class ;
+          rdfs:label "software" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#software_platform
+:software_platform rdf:type owl:Class ;
+                   rdfs:subClassOf :platform ;
+                   rdfs:label "software platform" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#source
+:source rdf:type owl:Class ;
+        rdfs:subClassOf :data_collection ;
+        rdfs:label "source" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#source_dataset
+:source_dataset rdf:type owl:Class ;
+                rdfs:subClassOf :dataset ;
+                rdfs:label "source dataset" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#spatial_and_temporal_analysis
+:spatial_and_temporal_analysis rdf:type owl:Class ;
+                               rdfs:subClassOf :analysis ;
+                               rdfs:label "spatial and temporal analysis" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#spatial_and_temporal_context
+:spatial_and_temporal_context rdf:type owl:Class ;
+                              rdfs:subClassOf :context ;
+                              rdfs:label "spatial and temporal context" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#spatial_and_temporal_heterogeneity
+:spatial_and_temporal_heterogeneity rdf:type owl:Class ;
+                                    rdfs:subClassOf :heterogeneity ;
+                                    rdfs:label "spatial and temporal heterogeneity" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#spatial_data_collection
+:spatial_data_collection rdf:type owl:Class ;
+                         rdfs:subClassOf :data_collection ;
+                         rdfs:label "spatial data collection" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#spatial_data_infrastructure
+:spatial_data_infrastructure rdf:type owl:Class ;
+                             rdfs:subClassOf :infrastructure ;
+                             rdfs:label "spatial data infrastructure" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#spatial_data_mining
+:spatial_data_mining rdf:type owl:Class ;
+                     rdfs:subClassOf :mining ;
+                     rdfs:label "spatial data mining" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#spatial_data_quality
+:spatial_data_quality rdf:type owl:Class ;
+                      rdfs:subClassOf :quality ;
+                      rdfs:label "spatial data quality" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#spatial_database
+:spatial_database rdf:type owl:Class ;
+                  rdfs:subClassOf :database ;
+                  rdfs:label "spatial database" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#spatial_distribution
+:spatial_distribution rdf:type owl:Class ;
+                      rdfs:subClassOf :distribution ;
+                      rdfs:label "spatial distribution" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#spatial_distribution_pattern
+:spatial_distribution_pattern rdf:type owl:Class ;
+                              rdfs:subClassOf :pattern ;
+                              rdfs:label "spatial distribution pattern" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#spatial_event
+:spatial_event rdf:type owl:Class ;
+               rdfs:subClassOf :event ;
+               rdfs:label "spatial event" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#spatial_experience
+:spatial_experience rdf:type owl:Class ;
+                    rdfs:subClassOf :experience ;
+                    rdfs:label "spatial experience" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#spatial_information
+:spatial_information rdf:type owl:Class ;
+                     rdfs:subClassOf :information ;
+                     rdfs:label "spatial information" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#spatial_information_infrastructure
+:spatial_information_infrastructure rdf:type owl:Class ;
+                                    rdfs:subClassOf :infrastructure ;
+                                    rdfs:label "spatial information infrastructure" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#spatial_information_quality
+:spatial_information_quality rdf:type owl:Class ;
+                             rdfs:subClassOf :quality ;
+                             rdfs:label "spatial information quality" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#spatial_knowledge
+:spatial_knowledge rdf:type owl:Class ;
+                   rdfs:subClassOf :knowledge ;
+                   rdfs:label "spatial knowledge" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#spatial_metadata
+:spatial_metadata rdf:type owl:Class ;
+                  rdfs:subClassOf :metadata ;
+                  rdfs:label "spatial metadata" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#spatial_pattern
+:spatial_pattern rdf:type owl:Class ;
+                 rdfs:subClassOf :pattern ;
+                 rdfs:label "spatial pattern" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#spatial_planning
+:spatial_planning rdf:type owl:Class ;
+                  rdfs:subClassOf :planning ;
+                  rdfs:label "spatial planning" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#spatial_relation
+:spatial_relation rdf:type owl:Class ;
+                  rdfs:label "spatial relation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#spatio-temporal_analysis
+:spatio-temporal_analysis rdf:type owl:Class ;
+                          rdfs:subClassOf :analysis ;
+                          rdfs:label "spatio-temporal analysis" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#spatio-temporal_clustering
+:spatio-temporal_clustering rdf:type owl:Class ;
+                            rdfs:subClassOf :clustering ;
+                            rdfs:label "spatio-temporal clustering" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#spatio-temporal_dataset
+:spatio-temporal_dataset rdf:type owl:Class ;
+                         rdfs:subClassOf :dataset ;
+                         rdfs:label "spatio-temporal dataset" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#spatio-temporal_pattern
+:spatio-temporal_pattern rdf:type owl:Class ;
+                         rdfs:subClassOf :pattern ;
+                         rdfs:label "spatio-temporal pattern" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#species
+:species rdf:type owl:Class ;
+         rdfs:label "species" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#standard
+:standard rdf:type owl:Class ;
+          rdfs:label "standard" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#standard-compliant_interface
+:standard-compliant_interface rdf:type owl:Class ;
+                              rdfs:subClassOf :interface ;
+                              rdfs:label "standard-compliant interface" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#starlight_visual_information_system_software
+:starlight_visual_information_system_software rdf:type owl:Class ;
+                                              rdfs:subClassOf :software ;
+                                              rdfs:label "starlight visual information system software" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#station
+:station rdf:type owl:Class ;
+         rdfs:subClassOf :geographic_object_ ;
+         rdfs:label "station" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#structure
+:structure rdf:type owl:Class ;
+           rdfs:label "structure" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#subjectivity_analysis
+:subjectivity_analysis rdf:type owl:Class ;
+                       rdfs:subClassOf :analysis ;
+                       rdfs:label "subjectivity analysis" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#suitable_landmark
+:suitable_landmark rdf:type owl:Class ;
+                   rdfs:subClassOf :landmark ;
+                   rdfs:label "suitable landmark" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#supervised_machine_learning
+:supervised_machine_learning rdf:type owl:Class ;
+                             rdfs:subClassOf :machine_learning ;
+                             rdfs:label "supervised machine learning" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#support_vector_machine
+:support_vector_machine rdf:type owl:Class ;
+                        rdfs:subClassOf :machine_learning ;
+                        rdfs:label "support vector machine" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#surveillance
+:surveillance rdf:type owl:Class ;
+              rdfs:subClassOf wn:activity ;
+              rdfs:label "surveillance" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#surveillance_and_control
+:surveillance_and_control rdf:type owl:Class ;
+                          rdfs:subClassOf :control ;
+                          rdfs:label "surveillance and control" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#surveillance_and_control_program
+:surveillance_and_control_program rdf:type owl:Class ;
+                                  rdfs:subClassOf :program ;
+                                  rdfs:label "surveillance and control program" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#survey
+:survey rdf:type owl:Class ;
+        rdfs:subClassOf wn:activity ;
+        rdfs:label "survey" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#symbolic_data
+:symbolic_data rdf:type owl:Class ;
+               rdfs:subClassOf :data ;
+               rdfs:label "symbolic data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#synthetic_information
+:synthetic_information rdf:type owl:Class ;
+                       rdfs:subClassOf :information ;
+                       rdfs:label "synthetic information" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#system
+:system rdf:type owl:Class ;
+        rdfs:label "system" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#tagging_application
+:tagging_application rdf:type owl:Class ;
+                     rdfs:subClassOf :application ;
+                     rdfs:label "tagging application" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#tagging_system
+:tagging_system rdf:type owl:Class ;
+                rdfs:subClassOf :system ;
+                rdfs:label "tagging system" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#task
+:task rdf:type owl:Class ;
+      rdfs:label "task" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#taxonomic_error
+:taxonomic_error rdf:type owl:Class ;
+                 rdfs:subClassOf :error ;
+                 rdfs:label "taxonomic error" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#taxonomic_validation
+:taxonomic_validation rdf:type owl:Class ;
+                      rdfs:subClassOf :validation ;
+                      rdfs:label "taxonomic validation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#technique
+:technique rdf:type owl:Class ;
+           rdfs:label "technique" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#technological_and_cultural_innovation
+:technological_and_cultural_innovation rdf:type owl:Class ;
+                                       rdfs:subClassOf :innovation ;
+                                       rdfs:label "technological and cultural innovation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#temporal_accuracy
+:temporal_accuracy rdf:type owl:Class ;
+                   rdfs:subClassOf :accuracy ;
+                   rdfs:label "temporal accuracy" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#temporal_analysis
+:temporal_analysis rdf:type owl:Class ;
+                   rdfs:subClassOf :analysis ;
+                   rdfs:label "temporal analysis" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#temporal_and_spatial_characteristic
+:temporal_and_spatial_characteristic rdf:type owl:Class ;
+                                     rdfs:subClassOf :characteristic ;
+                                     rdfs:label "temporal and spatial characteristic" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#temporal_display
+:temporal_display rdf:type owl:Class ;
+                  rdfs:subClassOf :display ;
+                  rdfs:label "temporal display" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#temporal_distribution
+:temporal_distribution rdf:type owl:Class ;
+                       rdfs:subClassOf :distribution ;
+                       rdfs:label "temporal distribution" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#temporal_pattern
+:temporal_pattern rdf:type owl:Class ;
+                  rdfs:subClassOf :pattern ;
+                  rdfs:label "temporal pattern" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#terrain_model
+:terrain_model rdf:type owl:Class ;
+               rdfs:subClassOf :model ;
+               rdfs:label "terrain model" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#text_analysis
+:text_analysis rdf:type owl:Class ;
+               rdfs:subClassOf :analysis ;
+               rdfs:label "text analysis" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#text_mining
+:text_mining rdf:type owl:Class ;
+             rdfs:subClassOf :mining ;
+             rdfs:label "text mining" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#textual_feature
+:textual_feature rdf:type owl:Class ;
+                 rdfs:subClassOf :feature ;
+                 rdfs:label "textual feature" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#thematic_accuracy
+:thematic_accuracy rdf:type owl:Class ;
+                   rdfs:subClassOf :accuracy ;
+                   rdfs:label "thematic accuracy" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#three_d_city_model
+:three_d_city_model rdf:type owl:Class ;
+                    rdfs:subClassOf :model ;
+                    rdfs:label "three d city model" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#time_context
+:time_context rdf:type owl:Class ;
+              rdfs:subClassOf :context ;
+              rdfs:label "time context" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#time_information
+:time_information rdf:type owl:Class ;
+                  rdfs:subClassOf :information ;
+                  rdfs:label "time information" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#timetable_service
+:timetable_service rdf:type owl:Class ;
+                   rdfs:subClassOf :service ;
+                   rdfs:label "timetable service" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#tool
+:tool rdf:type owl:Class ;
+      rdfs:label "tool" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#topic-specific_keyword
+:topic-specific_keyword rdf:type owl:Class ;
+                        rdfs:subClassOf :metadata ;
+                        rdfs:label "topic-specific keyword" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#topological_analysis
+:topological_analysis rdf:type owl:Class ;
+                      rdfs:subClassOf :analysis ;
+                      rdfs:label "topological analysis" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#topological_and-or_semantic_property
+:topological_and-or_semantic_property rdf:type owl:Class ;
+                                      rdfs:subClassOf wn:attribute ;
+                                      rdfs:label "topological and-or semantic property" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#topological_relation
+:topological_relation rdf:type owl:Class ;
+                      rdfs:subClassOf :spatial_relation ;
+                      rdfs:label "topological relation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#toponym_recognition
+:toponym_recognition rdf:type owl:Class ;
+                     rdfs:subClassOf :recognition ;
+                     rdfs:label "toponym recognition" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#toponyms_footprint
+:toponyms_footprint rdf:type owl:Class ;
+                    rdfs:subClassOf :footprint ;
+                    rdfs:label "toponyms footprint" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#traditional_geospatial_data
+:traditional_geospatial_data rdf:type owl:Class ;
+                             rdfs:subClassOf :geospatial_data ;
+                             rdfs:label "traditional geospatial data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#traffic_information
+:traffic_information rdf:type owl:Class ;
+                     rdfs:subClassOf :information ;
+                     rdfs:label "traffic information" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#training_data_set
+:training_data_set rdf:type owl:Class ;
+                   rdfs:subClassOf :dataset ;
+                   rdfs:label "training data set" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#travel_planning
+:travel_planning rdf:type owl:Class ;
+                 rdfs:subClassOf :planning ;
+                 rdfs:label "travel planning" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#triangulated_irregular_network
+:triangulated_irregular_network rdf:type owl:Class ;
+                                rdfs:subClassOf :network ;
+                                rdfs:label "triangulated irregular network" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#tweet
+:tweet rdf:type owl:Class ;
+       rdfs:subClassOf :information_representation_object_ ;
+       rdfs:label "tweet" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#twitter_api
+:twitter_api rdf:type owl:Class ;
+             rdfs:subClassOf :api ;
+             rdfs:label "twitter api" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#twitter_application_program_interface
+:twitter_application_program_interface rdf:type owl:Class ;
+                                       rdfs:subClassOf :interface ;
+                                       rdfs:label "twitter application program interface" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#twitter_data
+:twitter_data rdf:type owl:Class ;
+              rdfs:subClassOf :social_media_data ;
+              rdfs:label "twitter data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#twitter_message
+:twitter_message rdf:type owl:Class ;
+                 rdfs:subClassOf :message ;
+                 rdfs:label "twitter message" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#twitter_profile
+:twitter_profile rdf:type owl:Class ;
+                 rdfs:subClassOf :profile ;
+                 rdfs:label "twitter profile" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#twitter_stream_data
+:twitter_stream_data rdf:type owl:Class ;
+                     rdfs:subClassOf :data ;
+                     rdfs:label "twitter stream data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#twitter_streaming_api
+:twitter_streaming_api rdf:type owl:Class ;
+                       rdfs:subClassOf :api ;
+                       rdfs:label "twitter streaming api" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#typing_error
+:typing_error rdf:type owl:Class ;
+              rdfs:subClassOf :error ;
+              rdfs:label "typing error" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#ubiquitous_sensor
+:ubiquitous_sensor rdf:type owl:Class ;
+                   rdfs:subClassOf :sensor ;
+                   rdfs:label "ubiquitous sensor" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#uneven_participation
+:uneven_participation rdf:type owl:Class ;
+                      rdfs:subClassOf :participation ;
+                      rdfs:label "uneven participation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#unfamiliar_environment
+:unfamiliar_environment rdf:type owl:Class ;
+                        rdfs:subClassOf :environment ;
+                        rdfs:label "unfamiliar environment" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#unified_query
+:unified_query rdf:type owl:Class ;
+               rdfs:subClassOf :query ;
+               rdfs:label "unified query" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#unique_coordinate
+:unique_coordinate rdf:type owl:Class ;
+                   rdfs:subClassOf :coordinate ;
+                   rdfs:label "unique coordinate" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#unstructured_data
+:unstructured_data rdf:type owl:Class ;
+                   rdfs:subClassOf :data ;
+                   rdfs:label "unstructured data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#unstructured_social_media_content
+:unstructured_social_media_content rdf:type owl:Class ;
+                                   rdfs:subClassOf :content ;
+                                   rdfs:label "unstructured social media content" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#unsupervised_learning
+:unsupervised_learning rdf:type owl:Class ;
+                       rdfs:subClassOf :machine_learning ;
+                       rdfs:label "unsupervised learning" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#unsupervised_machine_learning_method
+:unsupervised_machine_learning_method rdf:type owl:Class ;
+                                      rdfs:subClassOf :method ;
+                                      rdfs:label "unsupervised machine learning method" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#up-to-date_land_information
+:up-to-date_land_information rdf:type owl:Class ;
+                             rdfs:subClassOf :information ;
+                             rdfs:label "up-to-date land information" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#urban_analysis
+:urban_analysis rdf:type owl:Class ;
+                rdfs:subClassOf :analysis ;
+                rdfs:label "urban analysis" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#urban_and_regional_planning
+:urban_and_regional_planning rdf:type owl:Class ;
+                             rdfs:subClassOf :planning ;
+                             rdfs:label "urban and regional planning" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#urban_area
+:urban_area rdf:type owl:Class ;
+            rdfs:subClassOf :area ;
+            rdfs:label "urban area" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#urban_planning
+:urban_planning rdf:type owl:Class ;
+                rdfs:subClassOf :planning ;
+                rdfs:label "urban planning" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#urban_walking_community
+:urban_walking_community rdf:type owl:Class ;
+                         rdfs:subClassOf :community ;
+                         rdfs:label "urban walking community" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#use
+:use rdf:type owl:Class ;
+     rdfs:subClassOf wn:activity ;
+     rdfs:label "use" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#user
+:user rdf:type owl:Class ;
+      rdfs:subClassOf wn:person ;
+      rdfs:label "user" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#user-behavioral_analysis
+:user-behavioral_analysis rdf:type owl:Class ;
+                          rdfs:subClassOf :analysis ;
+                          rdfs:label "user-behavioral analysis" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#user-constructed_filter
+:user-constructed_filter rdf:type owl:Class ;
+                         rdfs:subClassOf :filter ;
+                         rdfs:label "user-constructed filter" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#user-generated_content
+:user-generated_content rdf:type owl:Class ;
+                        rdfs:subClassOf :content ;
+                        rdfs:label "user-generated content" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#user-generated_data
+:user-generated_data rdf:type owl:Class ;
+                     rdfs:subClassOf :data ;
+                     rdfs:label "user-generated data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#user-generated_map
+:user-generated_map rdf:type owl:Class ;
+                    rdfs:subClassOf :map ,
+                                    :user-generated_content ;
+                    rdfs:label "user-generated map" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#user_behavior_analysis
+:user_behavior_analysis rdf:type owl:Class ;
+                        rdfs:subClassOf :analysis ;
+                        rdfs:label "user behavior analysis" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#user_behavioral_analysis
+:user_behavioral_analysis rdf:type owl:Class ;
+                          rdfs:subClassOf :analysis ;
+                          rdfs:label "user behavioral analysis" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#user_generated_geographic_contribution
+:user_generated_geographic_contribution rdf:type owl:Class ;
+                                        rdfs:subClassOf :contribution ;
+                                        rdfs:label "user generated geographic contribution" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#user_generated_geographical_content
+:user_generated_geographical_content rdf:type owl:Class ;
+                                     rdfs:subClassOf :content ,
+                                                     :user-generated_content ;
+                                     rdfs:label "user generated geographical content" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#user_generated_spatial_content
+:user_generated_spatial_content rdf:type owl:Class ;
+                                rdfs:subClassOf :content ,
+                                                :user-generated_content ;
+                                rdfs:label "user generated spatial content" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#user_interests_investigation
+:user_interests_investigation rdf:type owl:Class ;
+                              rdfs:subClassOf :investigation ;
+                              rdfs:label "user interests investigation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#user_movement_analysis
+:user_movement_analysis rdf:type owl:Class ;
+                        rdfs:subClassOf :analysis ;
+                        rdfs:label "user movement analysis" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#user_profile
+:user_profile rdf:type owl:Class ;
+              rdfs:subClassOf :profile ;
+              rdfs:label "user profile" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#users_contribution
+:users_contribution rdf:type owl:Class ;
+                    rdfs:subClassOf :contribution ;
+                    rdfs:label "users contribution" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#validation
+:validation rdf:type owl:Class ;
+            rdfs:subClassOf wn:activity ;
+            rdfs:label "validation" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#validation_method
+:validation_method rdf:type owl:Class ;
+                   rdfs:subClassOf :method ;
+                   rdfs:label "validation method" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#vector_data_model
+:vector_data_model rdf:type owl:Class ;
+                   rdfs:subClassOf :model ;
+                   rdfs:label "vector data model" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#vernacular_geography
+:vernacular_geography rdf:type owl:Class ;
+                      rdfs:subClassOf :geography ;
+                      rdfs:label "vernacular geography" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#vgi_data
+:vgi_data rdf:type owl:Class ;
+          rdfs:subClassOf :data ;
+          rdfs:label "vgi data" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#vgi_project
+:vgi_project rdf:type owl:Class ;
+             rdfs:subClassOf :project ;
+             rdfs:label "vgi project" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#virtual_logical_sensor
+:virtual_logical_sensor rdf:type owl:Class ;
+                        rdfs:subClassOf :sensor ;
+                        rdfs:label "virtual logical sensor" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#virtual_machine
+:virtual_machine rdf:type owl:Class ;
+                 rdfs:subClassOf :machine ;
+                 rdfs:label "virtual machine" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#visual_analytics
+:visual_analytics rdf:type owl:Class ;
+                  rdfs:subClassOf :analytics ;
+                  rdfs:label "visual analytics" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#visual_object
+:visual_object rdf:type owl:Class ;
+               rdfs:subClassOf :information_representation_object_ ;
+               rdfs:label "visual object" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#visual_representation_
+:visual_representation_ rdf:type owl:Class ;
+                        rdfs:subClassOf :information_representation_object_ ;
+                        rdfs:label "visual representation " .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#voluntary_monitoring
+:voluntary_monitoring rdf:type owl:Class ;
+                      rdfs:subClassOf :monitoring ;
+                      rdfs:label "voluntary monitoring" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#voluntary_science_monitoring
+:voluntary_science_monitoring rdf:type owl:Class ;
+                              rdfs:subClassOf :monitoring ;
+                              rdfs:label "voluntary science monitoring" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#volunteer
+:volunteer rdf:type owl:Class ;
+           rdfs:subClassOf wn:person ;
+           rdfs:label "volunteer" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#volunteer_sensor
+:volunteer_sensor rdf:type owl:Class ;
+                  rdfs:subClassOf :sensor ,
+                                  wn:person ;
+                  rdfs:label "volunteer sensor" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#volunteered_geographic_information
+:volunteered_geographic_information rdf:type owl:Class ;
+                                    rdfs:subClassOf :geographic_information ,
+                                                    :volunteered_information ;
+                                    rdfs:label "volunteered geographic information" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#volunteered_information
+:volunteered_information rdf:type owl:Class ;
+                         rdfs:subClassOf :information ;
+                         rdfs:label "volunteered information" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#wearable_device
+:wearable_device rdf:type owl:Class ;
+                 rdfs:subClassOf :device ;
+                 rdfs:label "wearable device" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#web_feature_service
+:web_feature_service rdf:type owl:Class ;
+                     rdfs:subClassOf :service ;
+                     rdfs:label "web feature service" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#web_map
+:web_map rdf:type owl:Class ;
+         rdfs:subClassOf :map ;
+         rdfs:label "web map" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#web_mapping_tool
+:web_mapping_tool rdf:type owl:Class ;
+                  rdfs:subClassOf :tool ;
+                  rdfs:label "web mapping tool" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#web_source
+:web_source rdf:type owl:Class ;
+            rdfs:subClassOf :source ;
+            rdfs:label "web source" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#wiki_service
+:wiki_service rdf:type owl:Class ;
+              rdfs:subClassOf :service ;
+              rdfs:label "wiki service" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#work
+:work rdf:type owl:Class ;
+      rdfs:subClassOf wn:activity ;
+      rdfs:label "work" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#xen_cloud_platform
+:xen_cloud_platform rdf:type owl:Class ;
+                    rdfs:subClassOf :platform ;
+                    rdfs:label "xen cloud platform" .
+
+
+###  http://cui.unige.ch/isi/onto/vgio#xml_message
+:xml_message rdf:type owl:Class ;
+             rdfs:subClassOf :message ;
+             rdfs:label "xml message" .
+
+
+###  http://www.wordnet.org/activity
+wn:activity rdf:type owl:Class .
+
+
+###  http://www.wordnet.org/attribute
+wn:attribute rdf:type owl:Class ;
+             rdfs:subClassOf wn:attribute .
+
+
+###  http://www.wordnet.org/person
+wn:person rdf:type owl:Class .
+
+
+###  http://www.wordnet.org/procedure
+wn:procedure rdf:type owl:Class ;
+             rdfs:subClassOf wn:activity .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
