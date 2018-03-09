@@ -1,2 +1,2 @@
 # vgio
-An onntologies for the semantic indexing in the Volunteered Geographic Information (VGI) documents.
+An onntology for the semantic indexing of documents in the Volunteered Geographic Information (VGI) domain.
