@@ -13,9 +13,9 @@
 <http://cui.unige.ch/isi/onto/vgio> rdf:type owl:Ontology ;
                                      dcterms:creator [ schema:name "Gilles Falquet"
                                                      ] ,
-                                                     [ schema:name "Rob Lemmens"
-                                                     ] ,
                                                      [ schema:name "Claudine Métral"
+                                                     ] ,
+                                                     [ schema:name "Rob Lemmens"
                                                      ] ;
                                      dcterms:description """An ontology for the semantic indexing of VGI related documents.
 
@@ -27,7 +27,8 @@ This ontology (still under construction) has been created by
 
 3. creating a hierarchy by grouping terms by their last word
 
-4 manually checking the semantic consistency of the hierarchy and adding a higher (more abstract) level the corresponds to Wordnet concepts"""@en .
+4. manually checking the semantic consistency of the hierarchy and adding a higher (more abstract) level the corresponds to Wordnet concepts"""@en ;
+                                     dcterms:title "VGIO: Volunteered Geographic Information Ontology" .
 
 #################################################################
 #    Annotation properties
@@ -39,6 +40,10 @@ dcterms:creator rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/dc/terms/description
 dcterms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
 
 
 ###  https://schema.org/name
