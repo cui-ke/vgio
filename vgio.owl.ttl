@@ -1,5 +1,4 @@
 @prefix : <http://cui.unige.ch/isi/onto/vgio#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix wn: <http://www.wordnet.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,13 +6,18 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @base <http://cui.unige.ch/isi/onto/vgio> .
 
 <http://cui.unige.ch/isi/onto/vgio> rdf:type owl:Ontology ;
-                                     dc:creator "Claudine Métral" ,
-                                                "Gilles Falquet" ,
-                                                "Rob Lemmens" ;
-                                     dc:description """An ontology for the semantic indexing of VGI related documents.
+                                     dcterms:creator [ schema:name "Gilles Falquet"
+                                                     ] ,
+                                                     [ schema:name "Rob Lemmens"
+                                                     ] ,
+                                                     [ schema:name "Claudine Métral"
+                                                     ] ;
+                                     dcterms:description """An ontology for the semantic indexing of VGI related documents.
 
 This ontology (still under construction) has been created by
 
@@ -29,12 +33,16 @@ This ontology (still under construction) has been created by
 #    Annotation properties
 #################################################################
 
-###  http://purl.org/dc/elements/1.1/creator
-dc:creator rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
 
 
-###  http://purl.org/dc/elements/1.1/description
-dc:description rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/name
+schema:name rdf:type owl:AnnotationProperty .
 
 
 #################################################################
